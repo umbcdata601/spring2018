@@ -1,0 +1,3110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+
+	<TITLE></TITLE>
+</HEAD>
+<BODY>
+<P><BR><BR>
+</P>
+<P><FONT COLOR="#767171"><U><B>CHAPTER
+2 	INTRODUCTION TO R AND RStudio						pp. 31 – 65</SPAN></B></U></FONT></FONT></FONT></P>
+<P><FONT COLOR="#767171"><B>(2.1)
+	</SPAN></B></FONT></FONT></FONT><FONT COLOR="#767171"><U><B>R
+SOFTWARE										p. 32 </SPAN></B></U></FONT></FONT></FONT>
+</P>
+<P><FONT COLOR="#767171"><B>(2.2)	</SPAN></B></FONT></FONT></FONT><FONT COLOR="#767171"><U><B>R
+vs. PYTHON										p. 38</SPAN></B></U></FONT></FONT></FONT></P>
+<P><FONT COLOR="#767171"><B>(2.3)	</SPAN></B></FONT></FONT></FONT><FONT COLOR="#767171"><U><B>RStudio											p.
+39 </SPAN></B></U></FONT></FONT></FONT>
+</P>
+<OL START=2>
+	<OL START=4>
+		<LI><P><FONT COLOR="#767171"><U><B>INSTALLING
+		R									p. 40</SPAN></B></U></FONT></FONT></FONT></P>
+		<LI><P><FONT COLOR="#767171"><U><B>INSTALLING
+		RStudio									p. 44 </SPAN></B></U></FONT></FONT></FONT>
+		</P>
+		<LI><P><FONT COLOR="#767171"><U><B>R
+		ESSENTIALS										p. 45</SPAN></B></U></FONT></FONT></FONT></P>
+		<LI><P><FONT COLOR="#767171"><U><B>R
+		DATA TYPES									p. 49</SPAN></B></U></FONT></FONT></FONT></P>
+		<LI><P><A NAME="_GoBack"></A>
+		<FONT COLOR="#767171"><U><B>R
+		DATA STRUCTURES									p. 53</SPAN></B></U></FONT></FONT></FONT></P>
+	</OL>
+</OL>
+<P STYLE="margin-left: 0.5in; margin-bottom: 0.11in; line-height: 200%">
+<BR><BR>
+</P>
+<P><FONT COLOR="#ff0000"><U><B>Homework
+#1 Due Tue 6 Feb</SPAN></B></U></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<OL START=2>
+	<LI><P STYLE="margin-bottom: 0.11in; page-break-before: always"><FONT COLOR="#ff0000"><U><B>INTRODUCTION
+	TO R AND RStudio</SPAN></B></U></FONT></FONT></FONT></P>
+</OL>
+<P><BR><BR>
+</P>
+<OL START=2>
+	<OL>
+		<LI><P><FONT COLOR="#ff0000"><B>R
+		SOFTWARE</SPAN></B></FONT></FONT></FONT></P>
+	</OL>
+</OL>
+<P>We
+now turn our attention to the software that we will use in this class
+throughout the semester. The open source software we will be using is
+called R and details about it can be found at CRAN
+(<A HREF="https://cran.r-project.org/">https://cran.r-project.org/</A><SPAN STYLE="text-decoration: none">
+</SPAN></FONT>), and it works with Windows, Mac, and Linux operating
+systems. R has its origins in the S programming language created in
+the 1970’s, and was originally intended to simply be an interactive
+interface to well-used Fortran routines at Bell Labs. R was created
+as an open-source alternative in the 1990s. Since then R has been
+used by scientists, statisticians and more recently, data scientists
+as a convenient environment for interactive exploratory data analysis
+(<A HREF="https://www.simple-talk.com/dotnet/software-tools/r-basics/">https://www.simple-talk.com/dotnet/software-tools/r-basics/</A>
+ 2/20/17).</SPAN></FONT></FONT></FONT></P>
+<P>R
+was also developed as a language that focused on delivering a better
+and more user-friendly way to do data analysis, statistics and
+graphical models. At first, R was primarily used in academics and
+research, but lately the enterprise world is discovering R as well.
+This makes R one of the fastest growing statistical languages in the
+corporate world. Since it was&nbsp;<A HREF="http://blog.revolutionanalytics.com/2014/07/reflections-on-john-chambers-userr-2014-keynote-address.html"><SPAN STYLE="text-decoration: none">designed
+as an interface language</SPAN></FONT></A> it&nbsp;presents a
+consistent language interface for algorithms written in other
+languages. Many packages work by providing R language bindings to
+other open-source software, making R a convenient hub for all kinds
+of algorithms and methods
+(<A HREF="http://blog.revolutionanalytics.com/2017/01/cran-10000.html">http://blog.revolutionanalytics.com/2017/01/cran-10000.html</A>
+ 2/20/17).</SPAN></FONT></FONT></FONT></P>
+<P>One
+of the main strengths of R is its huge user and development community
+that provides support through mailing lists, user-contributed
+documentation and a very active Stack Overflow group. The CRAN web
+site also holds a huge repository of curated R packages to which
+users can easily contribute.&nbsp; These packages are a collection of
+R functions and data that make it easy to immediately get access to
+the latest statistical techniques and functionalities without needing
+to develop everything from scratch yourself
+(<A HREF="http://www.kdnuggets.com/2015/05/r-vs-python-data-science.html">http://www.kdnuggets.com/2015/05/r-vs-python-data-science.html</A>
+ 2/20/17).  The CRAN system itself is a very effective platform for
+sharing R extensions, with a mature system for package authoring,
+building, testing, and distribution. The R core team and in
+particular the CRAN maintainers deserve significant credit for
+creating a vibrant ecosystem for R packages
+(<A HREF="http://blog.revolutionanalytics.com/2017/01/cran-10000.html">http://blog.revolutionanalytics.com/2017/01/cran-10000.html</A>
+ 2/20/17).</SPAN></FONT></FONT></FONT></P>
+<P>In
+Jan 2017, the CRAN web site added R’s 10,000 package and the number
+continues to grow as of 8/13/17 the total number of packages is
+11,221 (<A HREF="https://cran.r-project.org/web/packages/">https://cran.r-project.org/web/packages/</A>
+). One can observe the rate of growth of R packages in the figure
+below from
+<A HREF="http://blog.revolutionanalytics.com/2017/01/cran-10000.html">http://blog.revolutionanalytics.com/2017/01/cran-10000.html</A>
+ 2/20/17. </SPAN></FONT></FONT></FONT>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+<IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_b9042191.png" NAME="Picture 27" ALIGN=BOTTOM WIDTH=587 HEIGHT=444 BORDER=0></P>
+<P>Using
+data from LinkedIn in 2015 researchers determined the top 20 skills
+of a data scientist and the results are in the figure below
+(<A HREF="http://www.smartdatacollective.com/top-20-data-science-skills/">http://www.smartdatacollective.com/top-20-data-science-skills/</A>
+ 8/13/17).  Note the second entry is the software language R,
+followed by the Python programming language.</SPAN></FONT></FONT></FONT></P>
+<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_5ffa7dce.png" NAME="Picture 12" ALIGN=BOTTOM WIDTH=696 HEIGHT=735 BORDER=0></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P>Another
+indicator of the role R is playing in today’s world comes from the
+TIOBE Index for January 2018 (<A HREF="https://www.tiobe.com/tiobe-index/">https://www.tiobe.com/tiobe-index/</A>
+ 1/07/18). “The TIOBE Programming Community index is an indicator
+of the popularity of programming languages. The index is updated once
+a month. The ratings are based on the number of skilled engineers
+world-wide, courses and third party vendors. Popular search engines
+such as Google, Bing, Yahoo!, Wikipedia, Amazon, YouTube and Baidu
+are used to calculate the ratings. It is important to note that the
+TIOBE index is not about the&nbsp;best&nbsp;programming language or
+the language in which&nbsp;most lines of code&nbsp;have been
+written.”<FONT COLOR="#0000ff"> </FONT><B>Note that R has risen 8
+positions in one year to 8</B><SUP><B>th</B></SUP><B>, while Python
+has risen 1 position.</B></SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<TABLE WIDTH=92% CELLPADDING=8 CELLSPACING=0>
+	<COL WIDTH=40*>
+	<COL WIDTH=40*>
+	<COL WIDTH=38*>
+	<COL WIDTH=58*>
+	<COL WIDTH=40*>
+	<COL WIDTH=38*>
+	<THEAD>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Jan 18 2018</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Jan 17</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Change</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Programming
+				Language</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Ratings</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Change</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>1</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>1</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Java</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>14.215%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>-3.06%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>2</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>2</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>C</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>11.037%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>+1.69%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>3</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>3</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>C++</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>5.603%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>-0.70%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B><SPAN STYLE="background: #ffff00">4</SPAN></B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B><SPAN STYLE="background: #ffff00">5</SPAN></B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_3f9ccd5e.png" NAME="Picture 18" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B><SPAN STYLE="background: #ffff00">Python</SPAN></B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B><SPAN STYLE="background: #ffff00">4.678%</SPAN></B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B><SPAN STYLE="background: #ffff00">+1.21%</SPAN></B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>5</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>4</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_32e75b61.png" NAME="Picture 17" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>C#</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>3.754%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>-0.29%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>6</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>7</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_3f9ccd5e.png" NAME="Picture 16" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>JavaScript</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>3.465%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>+0.62%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>7</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>6</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_32e75b61.png" NAME="Picture 15" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Visual
+				Basic .NET</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>3.261%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>+0.30%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B><SPAN STYLE="background: #00ff00">8</SPAN></B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B><SPAN STYLE="background: #00ff00">16</SPAN></B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_b83ce156.png" NAME="Picture 14" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B><SPAN STYLE="background: #00ff00">R</SPAN></B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B><SPAN STYLE="background: #00ff00">2.549%</SPAN></B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B><SPAN STYLE="background: #00ff00">+0.76%</SPAN></B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>9</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>10</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_3f9ccd5e.png" NAME="Picture 13" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>PHP</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>2.532%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>-0.03%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>10</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>8</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_32e75b61.png" NAME="Picture 11" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Perl</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>2.419%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>-0.33%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>11</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>12</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_3f9ccd5e.png" NAME="Picture 10" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Ruby</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>2.406%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>-0.14%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>12</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>14</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_3f9ccd5e.png" NAME="Picture 9" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Swift</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>2.377%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>+0.45%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>13</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>11</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_32e75b61.png" NAME="Picture 8" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Delphi/Object
+				Pascal</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>2.377%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>-0.18%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>14</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>15</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_3f9ccd5e.png" NAME="Picture 7" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Visual
+				Basic</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>2.314%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>+0.40%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>15</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>9</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_d597bb2d.png" NAME="Picture 6" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Assembly
+				language</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>2.056%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>-0.65%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>16</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>18</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_3f9ccd5e.png" NAME="Picture 5" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Objective-C</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>1.860%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>+0.24%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>17</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>23</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_b83ce156.png" NAME="Picture 4" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Scratch</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>1.740%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>+0.58%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>18</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>19</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_3f9ccd5e.png" NAME="Picture 3" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>MATLAB</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>1.653%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>+0.07%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=10 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>19</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>13</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_d597bb2d.png" NAME="Picture 1" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=0></P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>Go</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>1.569%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>-0.76%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=16% HEIGHT=8 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>20</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>20</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=23% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>PL/SQL</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=16% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>1.429%</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=15% BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><FONT COLOR="#333333"><FONT FACE="Arial, serif"><B>-0.11%</B></FONT></FONT></P>
+			</TD>
+		</TR>
+	</THEAD>
+</TABLE>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P>We
+also observe programming language ratings from RedMonk (June 2017).
+These ratings are obtained by comparing the performance of
+programming languages relative to one another on GitHub and Stack
+Overflow twice a year. The idea is not to offer a statistically valid
+representation of current usage, but rather to correlate language
+discussion (Stack Overflow) and usage (GitHub) in an effort to
+extract insights into potential future adoption trends. Historically,
+the correlation between how a language ranks on GitHub versus its
+ranking on Stack Overflow has been strong (in this case 0.77).  No
+claims are made here that these rankings are representative of
+general usage more broadly. They are nothing more or less than an
+examination of the correlation between two populations we believe to
+be predictive of future use, hence their value. &nbsp;Out of the last
+10 of the top 20 languages, R has shown the most consistent upwards
+movement over time. From its position of 17 back in 2012, it has made
+steady gains over time
+(<A HREF="http://redmonk.com/sogrady/2017/06/08/language-rankings-6-17/">http://redmonk.com/sogrady/2017/06/08/language-rankings-6-17/</A>
+ 8/13/17). </SPAN></FONT></FONT></FONT>
+</P>
+<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_959f3a67.png" NAME="Picture 164" ALIGN=BOTTOM WIDTH=710 HEIGHT=713 BORDER=0></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><B>The
+ordered rankings from the above figure are:</B></SPAN></FONT></FONT></FONT></P>
+<DIV ID="TextSection" DIR="LTR" GUTTER=48 STYLE="column-count: 2">
+	<P><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">1
+	JavaScript</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">2
+	Java</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">3
+	Python</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">4
+	PHP</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">5
+	C#</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">6
+	C++</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">7
+	CSS</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">8
+	Ruby</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">9
+	C</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">10
+	Objective-C</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">11
+	Swift</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">12
+	Shell</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">12
+	Scala</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">14
+	R</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">15
+	Go</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">15
+	Perl</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">17
+	TypeScript</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">18
+	PowerShell</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">19
+	Haskell</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">20
+	CoffeeScript</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">20
+	Lua</SPAN></FONT><FONT COLOR="#00000a"><BR></FONT><FONT COLOR="#00000a"><SPAN STYLE="background: #fefefe">20
+	Matlab</SPAN></FONT></SPAN></FONT></FONT></FONT></P>
+</DIV>
+<DIV ID="Section1" DIR="LTR" GUTTER=48 STYLE="column-count: 2">
+	<P><BR><BR>
+	</P>
+</DIV>
+<P STYLE="margin-bottom: 0.11in; page-break-before: always">One
+more language ranking from the IEEE organization
+(</FONT></FONT><A HREF="http://spectrum.ieee.org/static/interactive-the-top-programming-languages-2017%208/13/17">http://spectrum.ieee.org/static/interactive-the-top-programming-languages-2017
+8/13/17</FONT></FONT></A>)
+where the</FONT></FONT>
+ranking is calculated using 12 weighted data sources such as Google
+search, GitHub, StackOverflow, Reddit, Career Builder, Twitter,
+Hacker News, Dice, and IEEE Explore. The 4 language type symbols are
+as follows: </FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in; page-break-before: always"><BR><BR>
+</P>
+<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_25056c13.png" NAME="Picture 251" ALIGN=BOTTOM WIDTH=362 HEIGHT=64 BORDER=0></SPAN></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_73c491b0.png" NAME="Picture 253" ALIGN=BOTTOM WIDTH=752 HEIGHT=762 BORDER=0></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<OL START=2>
+	<OL START=2>
+		<LI><P><FONT COLOR="#ff0000"><B>R
+		vs. PYTHON</SPAN></B></FONT></FONT></FONT></P>
+	</OL>
+</OL>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3>This
+leads us to a discussion of R vs Python – which is an ongoing
+debate within the data science community. We discussed on the origins
+of R previously and now we consider Python. The following discussion
+was taken from
+</SPAN></FONT></FONT><A HREF="http://www.kdnuggets.com/2015/05/r-vs-python-data-science.html"><FONT COLOR="#0000ff">http://www.kdnuggets.com/2015/05/r-vs-python-data-science.html</FONT></A></FONT></FONT></FONT>
+ 2/20/17.</FONT></FONT></FONT> </FONT></FONT>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">Python</FONT></FONT><FONT COLOR="#111111">&nbsp;</FONT></FONT><FONT COLOR="#111111">was
+created by Guido Van Rossem in 1991 and emphasizes productivity and
+code readability. Programmers that want to delve into data analysis
+or apply statistical techniques are some of the main users of Python
+for statistical purposes. The closer you get to working in an
+engineering environment, the more likely it is you might prefer
+Python. It’s a flexible language that is great to do something
+novel, and given its focus on readability and simplicity, its
+learning curve is relatively low. Similar to R, Python has packages
+as well.</FONT></FONT><FONT COLOR="#111111">&nbsp;</FONT></FONT><A HREF="https://pypi.python.org/pypi"><FONT COLOR="#551a8b"><SPAN STYLE="text-decoration: none">PyPi</SPAN></FONT></FONT></A><FONT COLOR="#111111">&nbsp;</FONT></FONT><FONT COLOR="#111111">is
+the Python Package index and consists of libraries to which users can
+contribute. Just like R, Python has a great community but it is a bit
+more scattered, since it’s a general purpose language.
+Nevertheless, Python for data science is rapidly claiming a more
+dominant position in the Python universe: the expectations are
+growing and more innovative data science applications will see their
+origin here.</FONT></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">On
+the web, you can find many numbers comparing the adoption and
+popularity of R and Python. While these figures often give a good
+indication on how these two languages are evolving in the overall
+ecosystem of computer science, it’s hard to compare them
+side-by-side.&nbsp; The main reason for this is that you will find R
+only in a data science environment as a general purpose language,
+Python, on the other hand, is widely used in many fields, such as web
+development. This often biases the ranking results in favor of
+Python.</FONT></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; background: #ffffff; line-height: 100%">
+<FONT COLOR="#111111">R
+is mainly used when the data analysis task requires standalone
+computing or analysis on individual servers. It’s great for
+exploratory work, and it's handy for almost any type of data analysis
+because of the huge number of packages and readily usable tests that
+often provide you with the necessary tools to get up and running
+quickly. R can even be part of a big data solution.</FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; background: #ffffff; line-height: 100%">
+<BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">You
+can use Python when your data analysis tasks need to be integrated
+with web apps or if statistics code needs to be incorporated into a
+production database. Being a fully-fledged programming language, it’s
+a great tool to implement algorithms for production use. While the
+infancy of Python packages for data analysis was an issue in the
+past, this has improved significantly over the years. Make sure to
+install</FONT></FONT><FONT COLOR="#111111">&nbsp;</FONT></FONT><A HREF="http://www.numpy.org/"><FONT COLOR="#551a8b">NumPy</FONT></FONT></A><FONT COLOR="#111111">&nbsp;</FONT></FONT><FONT COLOR="#111111">/SciPy
+(scientific computing) and</FONT></FONT><FONT COLOR="#111111">&nbsp;</FONT></FONT><A HREF="http://pandas.pydata.org/"><FONT COLOR="#551a8b">pandas</FONT></FONT></A><FONT COLOR="#111111">&nbsp;</FONT></FONT><FONT COLOR="#111111">(data
+manipulation) to make Python usable for data analysis.&nbsp; Also
+have a look at</FONT></FONT><FONT COLOR="#111111">&nbsp;</FONT></FONT><A HREF="http://matplotlib.org/"><FONT COLOR="#551a8b">matplotlib</FONT></FONT></A><FONT COLOR="#111111">&nbsp;</FONT></FONT><FONT COLOR="#111111">to
+make graphics, and</FONT></FONT><FONT COLOR="#111111">&nbsp;</FONT></FONT><A HREF="http://scikit-learn.org/stable/"><FONT COLOR="#551a8b">scikit-learn</FONT></FONT></A><FONT COLOR="#111111">&nbsp;</FONT></FONT><FONT COLOR="#111111">for
+machine learning.</FONT></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">There
+are signals that more people are switching from R to Python.
+Furthermore, there is a growing group of individuals using a
+combination of both languages when appropriate. This is exactly in
+line with what we recommend to our students as well. If you’re
+planning to start a career in data science, you are good with both
+languages. Job trends indicated an increasing demand for both skills,
+and wages are well above average.</FONT></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111"><SPAN STYLE="background: #ffff00">R:
+Pros and Cons</SPAN></FONT></FONT></FONT></FONT></P>
+<H5 CLASS="western" STYLE="margin-top: 0in; background: #ffffff"><BR>
+</H5>
+<H5 CLASS="western" STYLE="margin-top: 0in; background: #ffffff"><FONT COLOR="#111111"><I><U><B>Pro:
+A picture says more than a thousand words</B></U></I></FONT></FONT></FONT></H5>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">Visualized
+data can often be understood more efficiently and effectively than
+the raw numbers alone. R and visualization are a perfect match. Some
+must-see visualization packages are </FONT></FONT><FONT COLOR="#111111"><B>ggplot2</B></FONT></FONT><FONT COLOR="#111111">,
+ggvis, googleVis and rCharts.</FONT></FONT></FONT></FONT></P>
+<H5 CLASS="western" STYLE="margin-top: 0in; background: #ffffff"><FONT COLOR="#111111"><I><U><B>Pro:
+R ecosystem</B></U></I></FONT></FONT></FONT></H5>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">R
+has a rich ecosystem of cutting-edge packages and active community.
+Packages are available at CRAN, BioConductor and GitHub. You can
+search through all R packages at</FONT></FONT><FONT COLOR="#111111">&nbsp;</FONT></FONT><A HREF="http://www.rdocumentation.org/"><FONT COLOR="#551a8b">Rdocumentation</FONT></FONT></A><FONT COLOR="#111111">.</FONT></FONT></FONT></FONT></P>
+<H5 CLASS="western" STYLE="margin-top: 0in; background: #ffffff"><BR>
+</H5>
+<H5 CLASS="western" STYLE="margin-top: 0in; background: #ffffff"><FONT COLOR="#111111"><I><U><B>Pro:
+R lingua franca of data science</B></U></I></FONT></FONT></FONT></H5>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">R
+is developed by statisticians for statisticians. They can communicate
+ideas and concepts through R code and packages, you don’t
+necessarily need a computer science background to get started.&nbsp;
+Furthermore, it is increasingly adopted outside of academia.</FONT></FONT></FONT></FONT></P>
+<H5 CLASS="western" STYLE="margin-top: 0in; background: #ffffff"><FONT COLOR="#111111"><I><U><B>Pro/Con:
+R is slow</B></U></I></FONT></FONT></FONT></H5>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">R
+was developed to make the life of statisticians easier, not the life
+of your computer. Although R can be experienced as slow due to poorly
+written code, there are multiple packages to improve R’s
+performance: pqR, renjin and FastR, Riposte and many more.</FONT></FONT></FONT></FONT></P>
+<H5 CLASS="western" STYLE="margin-top: 0in; background: #ffffff"><FONT COLOR="#111111"><I><U><B>Con:
+R has a steep learning curve</B></U></I></FONT></FONT></FONT></H5>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">R’s
+learning curve is non-trivial, especially if you come from a GUI for
+your statistical analysis. Even finding packages can be time
+consuming if you’re not familiar with it.</FONT></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111"><SPAN STYLE="background: #ffff00">Python:
+Pros and Cons</SPAN></FONT></FONT></FONT></FONT></P>
+<H5 CLASS="western" STYLE="margin-top: 0in; background: #ffffff"><BR>
+</H5>
+<H5 CLASS="western" STYLE="margin-top: 0in; background: #ffffff"><FONT COLOR="#111111"><I><U><B>Pro:
+IPython Notebook</B></U></I></FONT></FONT></FONT></H5>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">The
+IPython Notebook makes it easier to work with Python and data. You
+can easily share notebooks with colleagues, without having them to
+install anything.&nbsp; This drastically reduces the overhead of
+organizing code, output and notes files. This will allow you to spend
+more time doing real work.</FONT></FONT></FONT></FONT></P>
+<H5 CLASS="western" STYLE="margin-top: 0in; background: #ffffff"><FONT COLOR="#111111"><I><U><B>Pro:
+A general purpose language</B></U></I></FONT></FONT></FONT></H5>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">Python
+is a general purpose language that is easy and intuitive. This gives
+it a relatively flat learning curve, and it increases the speed at
+which you can write a program. In short,&nbsp;you need less time to
+code and you have more time to play around with it! Furthermore, the
+Python testing framework is a built-in, low-barrier-to-entry testing
+framework that encourages good test coverage. This guarantees your
+code is reusable and dependable.</FONT></FONT></FONT></FONT></P>
+<H5 CLASS="western" STYLE="margin-top: 0in; background: #ffffff"><FONT COLOR="#111111"><I><U><B>Pro:
+A multi-purpose language</B></U></I></FONT></FONT></FONT></H5>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">Python
+brings people with different backgrounds together. As a common, easy
+to understand language that is known by programmers and that can
+easily be learnt by statisticians, you can build a single tool that
+integrates with every part of your workflow.</FONT></FONT></FONT></FONT></P>
+<H5 CLASS="western" STYLE="margin-top: 0in; background: #ffffff"><FONT COLOR="#111111"><I><U><B>Pro/Con:
+Visualizations</B></U></I></FONT></FONT></FONT></H5>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">Visualizations
+are an important criteria when choosing data analysis software.
+Although Python has some nice visualization libraries, there are
+maybe too many options to choose from. Moreover, compared to R,
+visualizations are usually more convoluted, and the results are not
+always so pleasing to the eye.</FONT></FONT></FONT></FONT></P>
+<H5 CLASS="western" STYLE="margin-top: 0in; background: #ffffff"><FONT COLOR="#111111"><I><U><B>Con:
+Python is a challenger</B></U></I></FONT></FONT></FONT></H5>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">Python
+is a challenger to R. It does not offer an alternative to the
+hundreds of essential R packages.&nbsp; Although it’s catching up,
+it’s still unclear if this will make people give up R?</FONT></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">And
+the winner is … </FONT></FONT></FONT></FONT>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#111111">As
+a data scientist it’s your job to pick the language that best fits
+the needs. Some questions that can help you:</FONT></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+	<FONT SIZE=3><FONT COLOR="#111111"><B>What
+	problems do you want to solve?</B></FONT></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+	<FONT SIZE=3><FONT COLOR="#111111"><B>What
+	are the net costs for learning a language?</B></FONT></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+	<FONT SIZE=3><FONT COLOR="#111111"><B>What
+	are the commonly used tools in your field?</B></FONT></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+	<FONT SIZE=3><FONT COLOR="#111111"><B>What
+	are the other available tools and how do these relate to the
+	commonly used tools?</B></FONT></FONT></FONT></FONT></P>
+</UL>
+<P><BR><BR>
+</P>
+<P><B>In
+this class we will begin with R and cover Python later in the
+semester.</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<OL START=2>
+	<OL START=3>
+		<LI><P><FONT COLOR="#ff0000"><B>RStudio</SPAN></B></FONT></FONT></FONT></P>
+	</OL>
+</OL>
+<P>We
+now seek a good (free) IDE (Integrated Development Environment) to
+use with R. An IDE is a software platform that provides programmers
+and developers a comprehensive set of tools for software development
+in a single product. IDEs are built to work with specific application
+platforms and remove barriers involved in the lifecycle of software
+development. IDEs are used in development teams to build new
+software, apps, web pages, and services, and they help by providing
+one tool with all the features and removing the need for
+integrations. IDEs are for programming code to a specific platform or
+platforms, and have integrated features that know how the platform
+works and how to use the features of the platform through compiling
+code, debugging code, or intelligently completing code automatically
+(<A HREF="https://www.g2crowd.com/categories/integrated-development-environment-ide">https://www.g2crowd.com/categories/integrated-development-environment-ide</A>
+ 2/22/17).</FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3>A good
+choice for R is </FONT><B><SPAN STYLE="background: #ffff00">RStudio</SPAN></B></FONT>.
+</FONT><FONT COLOR="#404040">RStudio is an integrated
+development environment (IDE) for R. It includes a console,
+syntax-highlighting editor that supports direct code execution, as
+well as tools for plotting, history, debugging and workspace
+management. RStudio is available in open source and commercial
+editions and runs on the desktop (Windows, Mac, and Linux) or in a
+browser connected to RStudio Server or RStudio Server Pro
+(Debian/Ubuntu, RedHat/CentOS, and SUSE Linux) from
+</FONT></FONT><FONT COLOR="#0000ff">(<A HREF="https://www.rstudio.com/products/rstudio/">https://www.rstudio.com/products/rstudio/</A></FONT></FONT></FONT></FONT>
+ 2/20/17).</FONT></FONT></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 100%">The
+open source desktop version features include</FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%">Access
+	RStudio locally</SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%">Syntax
+	highlighting, code completion, and smart indentation</SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%">Execute
+	R code directly from the source editor</SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%">Quickly
+	jump to function definitions</SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%">Easily
+	manage multiple working directories using projects</SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%">Integrated
+	R help and documentation</SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%">Interactive
+	debugger to diagnose and fix errors quickly</SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%">Extensive
+	package development tools</SPAN></FONT></FONT></FONT></P>
+</UL>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<OL START=2>
+	<OL START=4>
+		<LI><P><FONT COLOR="#ff0000"><B>INSTALLING
+		R</SPAN></B></FONT></FONT></FONT></P>
+	</OL>
+</OL>
+<P><BR><BR>
+</P>
+<P>First
+install the latest release version of R from
+<A HREF="https://cran.r-project.org/">https://cran.r-project.org/</A>.
+Most of you (Windows and Mac users) will probably want to use the
+precompiled binary distribution associated with your operating
+systems. Select the latest version compatible with your operating
+system and install it. </SPAN></FONT></FONT><B>As
+of 01/07/18 the latest release of R is dated 11/30/17 and is called
+Kite Eating Tree</SPAN></B></FONT></FONT>
+(named after Charlie Brown comic events). The main web page should
+look like</SPAN></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_bc69dda7.png" NAME="Picture 20" ALIGN=BOTTOM WIDTH=710 HEIGHT=476 BORDER=0></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><B>Follow
+the appropriate install directions depending on your OS and follow
+the </SPAN></B></FONT></FONT><FONT COLOR="#ff0000"><B>install
+R for the first time </SPAN></B></FONT></FONT></FONT><B>instructions.
+Assuming you have a relatively new computer, you will want to install
+the 64-bit version. I recommend you use the default install
+parameters and download all the Help and Support files. I also
+recommend you add an icon on your desktop and taskbar to make it
+easier to start R. </SPAN></B></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P><B><SPAN STYLE="background: #ffff00">NOTE
+– you may need ADMIN privileges on your computer to install R and
+RStudio </SPAN></B><B>and you probably want both applications to run
+with ADMIN privileges.</B>  In Windows 10 to give R and RStudio ADMIN
+privileges -&gt; left mouse on the Start button located at bottom
+left of your screen to get the Tile Start screen, then find both
+programs in App and Program list on the far right, then right mouse
+-&gt; More -&gt; Run as Admin for both (and select Ok in the pop-up
+menu).</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#000000">To
+verify you have installed the 64-bit version of R correctly, double
+click on the R icon with the version you just installed. As of
+01/07/18 the icon in Windows should look like</FONT></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_4eaad236.png" NAME="Picture 21" ALIGN=BOTTOM WIDTH=141 HEIGHT=161 BORDER=0></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#000000">In
+Windows your default R program files are located in the following
+folder </FONT></FONT><FONT COLOR="#000000"><B>C:\Program
+Files\R\R-3.4.3  </B></FONT></FONT><FONT COLOR="#000000">
+with a file structure that looks something like</FONT></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_7e0328ec.png" NAME="Picture 19" ALIGN=BOTTOM WIDTH=600 HEIGHT=408 BORDER=0></P>
+<P>The
+location of the R executables is in <B>C:\Program
+Files\R\R-3.4.3\bin\x64</B> folder but you don’t generally want to
+use any of these directly.</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#000000">You
+generally will want to use the x64 (bit) version so click on the icon
+shown below labeled </FONT></FONT><FONT COLOR="#000000"><B>R
+x64 3.4.3</B></FONT></FONT><FONT COLOR="#000000"> and
+you should see the following screen on your desktop (Windows
+example).</FONT></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_c9be0f2c.png" NAME="Picture 22" ALIGN=BOTTOM WIDTH=703 HEIGHT=561 BORDER=0></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#000000">At
+this point you can verify functionality by entering 2 + 2 on the user
+input line which begins with the </FONT></FONT><FONT COLOR="#000000"><B>“</B></FONT></FONT><FONT COLOR="#ff0000"><B>&gt;</B></FONT></FONT><FONT COLOR="#000000"><B>”</B></FONT></FONT><FONT COLOR="#000000">
+symbol and then hit the Enter (Return) key and you should see the
+following output</FONT></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_32716915.png" NAME="Picture 23" ALIGN=BOTTOM WIDTH=695 HEIGHT=560 BORDER=0></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#000000">Next
+enter the following commands one-by-one at the prompt to look at your
+default R environment</FONT></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>library()
+  </SPAN></B><SPAN STYLE="font-weight: normal">#
+And you will get a list of packages in the base R install – note
+use the # sign to add a comment after an R instruction.</SPAN></SPAN></FONT></FONT></FONT></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>.Library
+ </SPAN></B><SPAN STYLE="font-weight: normal">#
+Will show you where you R package files are located – mine returns </SPAN></SPAN></FONT></FONT></FONT></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">[1]
+&quot;C:/PROGRA~1/R/R-34~1.3/library&quot;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>getwd()</SPAN></B></FONT></FONT></FONT>
+  #
+This will return the default folder of any files you generate during
+an R session. Mine returns </FONT></FONT></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT FACE="Courier New, serif">[1]
+&quot;C:/Users/lstout/Documents&quot;</FONT></FONT></FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><B><SPAN STYLE="background: #ffff00">NOTE
+– I will show your R inputs in blue font (without the prompt so
+that you can copy and paste into your computer) and R’s response in
+green throughout this course.</SPAN></B></FONT></FONT></FONT><B>
+</B></FONT></FONT></FONT></FONT></FONT>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<BR><BR>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3>If
+you navigate to that folder you should see 3 files in particular
+</FONT></FONT></FONT><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>.RData,
+.RHistory</SPAN></B></FONT></FONT></FONT>
+(which may be empty the first time you look at it), and </FONT></FONT></FONT><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>.Rprofile</SPAN></B></FONT></FONT></FONT>
+(which will generally by empty). </FONT></FONT></FONT></FONT></FONT>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#000000">Now
+go ahead and close the R GUI you just opened (don’t bother to save
+it – since you haven’t done anything worth saving yet).</FONT></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#000000">If
+you have any questions about installing R start with the frequently
+asked questions at </FONT></FONT><A HREF="https://cran.r-project.org/faqs.html">https://cran.r-project.org/faqs.html</FONT></A><FONT COLOR="#000000">.
+For more information just Google the web to find additional
+assistance.  </FONT></FONT></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<OL START=2>
+	<OL START=5>
+		<LI><P><FONT COLOR="#ff0000"><B>INSTALLING
+		RStudio</SPAN></B></FONT></FONT></FONT></P>
+	</OL>
+</OL>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#000000">Next,
+I strongly recommend you install the free version of RStudio which
+serves as an excellent integrated development environment(IDE) for R.
+ Go to </FONT></FONT><A HREF="https://www.rstudio.com/products/rstudio/download/">https://www.rstudio.com/products/rstudio/download/</FONT></A><FONT COLOR="#000000">
+and download the </FONT></FONT><FONT COLOR="#000000"><B>free
+version</B></FONT></FONT><FONT COLOR="#000000"> called
+RStudio Desktop Open Source License (works with Windows, MacOS and
+Linux).  </FONT></FONT></FONT></FONT>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#000000">For
+installation help try
+</FONT></FONT><A HREF="http://rprogramming.net/download-and-install-rstudio/">http://rprogramming.net/download-and-install-rstudio/</FONT></A><FONT COLOR="#000000">
+or </FONT></FONT><A HREF="http://web.cs.ucla.edu/~gulzar/rstudio/">http://web.cs.ucla.edu/~gulzar/rstudio/</FONT></A><FONT COLOR="#000000">
+or
+</FONT></FONT><A HREF="https://medium.com/@GalarnykMichael/install-r-and-rstudio-on-windows-5f503f708027">https://medium.com/@GalarnykMichael/install-r-and-rstudio-on-windows-5f503f708027</FONT></A><FONT COLOR="#000000">.
+ There are also </FONT></FONT><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>youtube</SPAN></B></FONT></FONT></FONT><FONT COLOR="#000000">
+videos available. </FONT></FONT></FONT></FONT>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#000000">Make
+sure you click</FONT></FONT><FONT COLOR="#444444"><FONT SIZE=2 STYLE="font-size: 10pt">
+the link to the version of RStudio appropriate </SPAN></FONT></FONT><FONT SIZE=2 STYLE="font-size: 10pt">for
+your operating system. The first link is to the version that RStudio
+recommends for you. I also recommend you use the default values
+during the install process. During the install process RStudio
+generally will be able to find the latest version of R that you just
+installed above and link to it. </SPAN></FONT></FONT></FONT>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<FONT SIZE=3><FONT SIZE=2 STYLE="font-size: 10pt">When
+you are done installing RStudio, open the application and you should
+see the start screen which will look something like but without much
+of the data I show in 4 quadrants. </SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt"><B>Note
+sometimes I find that RStudio does not open the first time you try
+each session, when it hangs (</SPAN></B></FONT><FONT SIZE=2 STYLE="font-size: 10pt">you
+might get the message “The RStudio server is taking a long time…)</SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt"><B>,
+just select Terminate R and restart – it generally starts the
+second time</SPAN></B></FONT><FONT SIZE=2 STYLE="font-size: 10pt">.
+Note your screen may be organized a little differently.</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+<IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_6889b42d.png" NAME="Picture 24" ALIGN=BOTTOM WIDTH=710 HEIGHT=382 BORDER=0></P>
+<P>The
+first thing you should do is to verify the R version RStudio is using
+(bottom left ellipse above) is the same one you just installed. Next
+go to the Console quadrant (bottom left) and enter the following
+after the <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>&gt;
+</SPAN></B></FONT></FONT></FONT>prompt and you should see something
+like what I have shown in green.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>R.version.string</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">[1]
+&quot;R version 3.4.3 (2017-11-30)&quot;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Next
+you should find out where RStudio has been installed on your computer
+– in Windows try something like</SPAN></FONT></FONT></FONT></P>
+<P><B>C:\Program
+Files.    </B>In this folder you should see both an R folder and the
+RStudio folder.</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Next
+enter the following command</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>.libPaths()</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B>[1]
+&quot;C:/Users/lstout/Documents/R/win-library/3.4&quot; &quot;C:/Program
+Files/R/R-3.4.3/library&quot; </FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<BR>
+</P>
+<P>It
+should return 2 locations – note the location of the first for
+later reference. This will be the location where all the additional
+packages that you will be downloading and installing from RStudio
+during the semester can be found. At this time it should be empty or
+almost empty. <B><SPAN STYLE="background: #ffff00">You will need to
+know where this folder is in the event that you have to manually
+install an R package</SPAN></B>. We will talk more about installing
+packages shortly. The second folder is where the base packages of R
+are located when you initially installed R.</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Next
+download a couple of cheatsheets from RStudio that will be helpful
+this semester. Go to <A HREF="https://www.rstudio.com/resources/cheatsheets/">https://www.rstudio.com/resources/cheatsheets/</A>
+and at a minimum download the following Cheat Sheets; </SPAN></FONT></FONT></FONT>
+</P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Dates
+	and Times</SPAN></B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Work
+	with Strings</SPAN></B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Data
+	Import</SPAN></B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Data
+	Transformation</SPAN></B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">RStudio
+	IDE</SPAN></B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Data
+	Visualization</SPAN></B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Base
+	R</SPAN></B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Advanced
+	R</SPAN></B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Regular
+	Expressions</SPAN></B></SPAN></FONT></FONT></FONT></P>
+</UL>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<OL START=2>
+	<OL START=6>
+		<LI><P><FONT COLOR="#ff0000"><B>R
+		ESSENTIALS</SPAN></B></FONT></FONT></FONT></P>
+	</OL>
+</OL>
+<P>We
+will now cover some basic R principles that will help you through the
+semester. The following is from
+<A HREF="http://stats.idre.ucla.edu/r/faq/the-very-basics-of-r/">http://stats.idre.ucla.edu/r/faq/the-very-basics-of-r/</A>
+19Aug2017</SPAN></FONT></FONT></FONT></P>
+<P><B>Q:&nbsp;&nbsp;What
+is a package?</B></SPAN></FONT></FONT></FONT></P>
+<P>A
+package is a collection or group of objects that R can use.  A
+package may contain functions, data frames, or other objects, such as
+dynamically loaded libraries of compiled code. We will rely heavily
+on numerous packages this semester. </SPAN></FONT></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P><B>Q:&nbsp;&nbsp;How
+do I see which packages I have available?</B></SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>library()</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P><B>Q:&nbsp;How
+do I install and load a package?</B></SPAN></FONT></FONT></FONT></P>
+<P>As
+an example we will download and install the <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>ggplot2</SPAN></B></FONT></FONT></FONT>
+package which we will be using in the Visualization section. <B>In
+RStudio pull down the </B><FONT COLOR="#ff0000"><B>Tools </B></FONT><B>menu
+and select </B><FONT COLOR="#ff0000"><B>Install Packages </B></FONT><B>and
+will get the following pop-up screen</B>. </SPAN></FONT></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_6509b6f3.png" NAME="Picture 2" ALIGN=BOTTOM WIDTH=420 HEIGHT=322 BORDER=0></SPAN></FONT></P>
+<P><BR><BR>
+</P>
+<P>Leave
+all the defaults and start entering <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>ggplot2</SPAN></B></FONT></FONT></FONT>
+in the <FONT COLOR="#ff0000"><B>Packages</B></FONT> lines (ensure
+that <B>Install dependencies is checked</B>) and you should see
+RStudio finish your command as shown below – then hit <FONT COLOR="#ff0000"><B>Install</B></FONT>.
+You can also do this directly in the Console quadrant at the prompt</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>install.packages(&quot;ggplot2&quot;)</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><IMG SRC="02_Ch_2_Intro_to_R_and_RStudio_UMBC_DS_Class_Jan_2_html_2f4de33e.png" NAME="Picture 224" ALIGN=BOTTOM WIDTH=445 HEIGHT=333 BORDER=0></SPAN></FONT></P>
+<P><BR><BR>
+</P>
+<P>You
+will then see information appear in the Console tracking the progress
+of the install. Check for errors (warnings are okay) and when you get
+the R prompt again enter </SPAN></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>library(&quot;ggplot2&quot;)</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>This
+command loads the package into your R environment.</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>You
+can also accomplish the load by going to the bottom right quadrant,
+select the <FONT COLOR="#ff0000">Packages</FONT> tab and scroll down
+the alphabetical list for the User Library, as opposed to the System
+Library, find <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>ggplot2</SPAN></B></FONT></FONT></FONT>
+and click on the far left box before its name. </SPAN></FONT></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P><FONT COLOR="#ff0000"><B><SPAN STYLE="background: #ffff00">IMPORTANT</SPAN></B></FONT><B><SPAN STYLE="background: #ffff00">
+- You won’t have to re-install each package at the beginning of
+each session but you will need to reload them at the beginning of
+each session.</SPAN></B><B> </B></SPAN></FONT></FONT></FONT>
+</P>
+<P>And
+you will again see information appear in the Console tracking the
+progress of the load. </SPAN></FONT></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P>To
+verify a successful load enter the following at the Console prompt</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>library(help=&quot;ggplot2&quot;)</SPAN></B></FONT></FONT></FONT></P>
+<P>and
+you will get basic package information in the top left quadrant.</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>Q:&nbsp;How
+do I see the help file for a specific function?</B> Keep in mind that
+packages generally contain multiple functions. For example one
+function within <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>ggplot2</SPAN></B></FONT></FONT></FONT>
+is <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>qplot
+</SPAN></B></FONT></FONT></FONT>- so at the prompt enter</SPAN></FONT></FONT></FONT></P>
+<P><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>?qplot</SPAN></B></FONT></FONT></FONT>
+</SPAN></FONT></FONT></FONT>
+</P>
+<P>and
+you will get basic function information in the bottom right quadrant
+under the Help tab.</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>Q:&nbsp;How
+can I save my work?</B></SPAN></FONT></FONT></FONT></P>
+<P>The
+easiest way to save your work is to ensure you save your work when
+you exit RStudio by always answering yes when prompted to save it.
+You can also save all the objects and functions that you have created
+in an <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>.RData
+file,</SPAN></B></FONT></FONT></FONT> by using the <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>save</SPAN></B></FONT></FONT></FONT>
+or the <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>save.image</SPAN></B></FONT></FONT></FONT>
+functions.  It is very important that you remember to include the
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>.RData</SPAN></B></FONT></FONT></FONT>
+extension when indicating the file path because R will not supply it
+for you!</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>save(file=&quot;c:/temp/file_name.RData&quot;)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>save.image(&quot;c:/temp/file_name.RData&quot;)</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>Q:&nbsp;How
+can I retrieve the work that I have saved using
+a&nbsp;</B><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>save.image</SPAN></B></FONT></FONT></FONT><B>&nbsp;function?</B></SPAN></FONT></FONT></FONT></P>
+<P>The
+load function will load an <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>.RData</SPAN></B></FONT></FONT></FONT>
+file.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>load(&quot;c:/temp/file_name.RData&quot;)</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>Q:&nbsp;How
+do I save all the commands that I have used in an R session?</B></SPAN></FONT></FONT></FONT></P>
+<P>You
+can save a history of your R session in an <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>.Rhistory</SPAN></B></FONT></FONT></FONT>
+file by using the history function.  It is very important that you
+remember to include the <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>.Rhistory</SPAN></B></FONT></FONT></FONT>
+extension when indicating the file path because R will not supply it
+for you!</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>history(&quot;c:/temp/file_name.Rhistory&quot;)</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>Q:&nbsp;How
+can I retrieve the work that I have saved using a&nbsp;history&nbsp;function?</B></SPAN></FONT></FONT></FONT></P>
+<P>The
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>loadhistory</SPAN></B></FONT></FONT></FONT>
+function will load an <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>.Rhistory</SPAN></B></FONT></FONT></FONT>
+file.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>loadhistory(&quot;c:/temp/file_name.Rhistory&quot;)</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>Q:&nbsp;How
+can I see a list of the objects that are currently available?</B></SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>ls()</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P><B>Q:&nbsp;How
+do I remove unwanted objects and functions?</B></SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>rm(object_name1,
+object_names2, etc.)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>rm(function_name1,
+function_name2, etc.)</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>Q:&nbsp;What
+is the first thing to check if a function or object is behaving
+strangely and unexpectedly?</B></SPAN></FONT></FONT></FONT></P>
+<P>Always
+check if there is a masked object or function which is being used
+instead of the object or function that you intended to use.  If this
+is the case then the object or function can be removed by using the
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>rm</SPAN></B></FONT></FONT></FONT>
+function as shown in the previous answer.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>masked()</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>There
+are several problems you might encounter when trying to install and
+load packages. Here is an example of one;</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">PROBLEM
+using install.packages(“FSelector”) which also downloads Weka and
+</FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">RWekajars
+got the following error message</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">package
+‘RWekajars’ successfully unpacked and MD5 sums checked</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">Warning
+in install.packages :</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+ <FONT FACE="Courier New, serif"><B>unable to move
+temporary installation
+‘C:\Users\lstout\Documents\R\win-library\3.4\file2e206ded1fa2\RWekajars’
+to ‘C:\Users\lstout\Documents\R\win-library\3.4\RWekajars’</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">package
+‘RWeka’ successfully unpacked and MD5 sums checked</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; background: #ffffff; line-height: 0.16in">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0in; background: #ffffff; line-height: 0.16in">
+<BR>
+</P>
+<P><B>Solution
+– sometimes you will have a problem with your firewall and/or virus
+protection software. You may have to change some settings to allow an
+R package to be installed.</B></SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B><SPAN STYLE="background: #ffff00">If
+that does not work you may have to manually download the compressed
+package file using the following steps</SPAN></B></SPAN></FONT></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%">Download
+	the tar.gz file from the CRAN web page – in Windows it generally
+	ends up in your  Download folder</SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%">Move
+	it into the R library folder that contains your added packages which
+	was the one that RStudio created and is the first one shown
+	(highlighted in yellow below) when you run the following command</SPAN></FONT></FONT></FONT></P>
+</UL>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>.libPaths()</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><SPAN STYLE="background: #ffff00">[1]
+&quot;C:/Users/</SPAN><FONT COLOR="#ff0000"><SPAN STYLE="background: #ffff00">lstout</SPAN></FONT><SPAN STYLE="background: #ffff00">/Documents/R/win-library/3.4&quot;</SPAN>
+&quot;C:/Program Files/R/R-3.4.1/library&quot;</SPAN></B></FONT></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%">Next
+	create a string variable with the full pathname with the name of
+	tar.qz file you just downloaded</SPAN></FONT></FONT></FONT></P>
+</UL>
+<P STYLE="margin-left: 0.2in; text-indent: -0.2in; margin-top: 0.08in; line-height: 150%">
+<FONT COLOR="#0000ff"><FONT FACE="Lucida Console, serif"><FONT SIZE=2 STYLE="font-size: 9pt">ppath
+&lt;-
+&quot;C:/Users/lstout/Documents/R/win-library/3.4/RWekajars_3.9.1-3.tar.gz&quot;</FONT></FONT></FONT></SPAN></FONT></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%">Run
+	<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>install.packages</SPAN></B></FONT></FONT></FONT>
+	with flags set as below</SPAN></FONT></FONT></FONT></P>
+</UL>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>install.packages(ppath,
+repos=NULL, type=&quot;source&quot;)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=2 STYLE="font-size: 9pt">Installing
+package into ‘C:/Users/lstout/Documents/R/win-library/3.4’</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=2 STYLE="font-size: 9pt">(as
+‘lib’ is unspecified)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=2 STYLE="font-size: 9pt">*
+installing *source* package 'RWekajars' ...</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=2 STYLE="font-size: 9pt">**
+package 'RWekajars' successfully unpacked and MD5 sums checked</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+  <FONT FACE="Courier New, serif"><B><FONT SIZE=2 STYLE="font-size: 9pt">**********************************************</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+  <FONT FACE="Courier New, serif"><B><FONT SIZE=2 STYLE="font-size: 9pt">WARNING:
+this package has a configure script</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+        <FONT FACE="Courier New, serif"><B><FONT SIZE=2 STYLE="font-size: 9pt">It
+probably needs manual configuration</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+  <FONT FACE="Courier New, serif"><B><FONT SIZE=2 STYLE="font-size: 9pt">**********************************************</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=2 STYLE="font-size: 9pt">**
+R</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=2 STYLE="font-size: 9pt">**
+inst</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=2 STYLE="font-size: 9pt">**
+preparing package for lazy loading</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=2 STYLE="font-size: 9pt">**
+help</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=2 STYLE="font-size: 9pt">No
+man pages found in package  'RWekajars' </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=2 STYLE="font-size: 9pt">***
+installing help indices</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=2 STYLE="font-size: 9pt">**
+building package indices</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">**
+testing if installed package can be loaded</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">***
+arch - i386</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">***
+arch - x64</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">*
+DONE (RWekajars)</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>For
+more information on RStudio go to </SPAN></FONT></FONT></FONT>
+</P>
+<P><A HREF="http://www.cs.utexas.edu/~cannata/dataVis/Class%20Notes/Getting%20Started%20with%20RStudio.pdf">http://www.cs.utexas.edu/~cannata/dataVis/Class%20Notes/Getting%20Started%20with%20RStudio.pdf</SPAN></FONT></FONT></A></P>
+<P><BR><BR>
+</P>
+<P><A HREF="https://www.safaribooksonline.com/library/view/getting-started-with/9781449314798/ch01.html">https://www.safaribooksonline.com/library/view/getting-started-with/9781449314798/ch01.html</A>
+</SPAN></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P>For
+more information see the R resources contained in
+<A HREF="http://dss.princeton.edu/training/">http://dss.princeton.edu/training/</A>
+</SPAN></FONT></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><B>RStudio
+HINT – </SPAN></B></FONT></FONT>to
+zoom display – go to View -&gt; Zoom In</SPAN></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<OL START=2>
+	<OL START=7>
+		<LI><P><FONT COLOR="#ff0000"><B>R
+		DATA TYPES</SPAN></B></FONT></FONT></FONT></P>
+	</OL>
+</OL>
+<P>From
+<A HREF="http://www.r-tutor.com/r-introduction/basic-data-types">http://www.r-tutor.com/r-introduction/basic-data-types</A>
+</SPAN></FONT></FONT></FONT>
+</P>
+<P>The
+basic data types (also known as atomic data types or modes) in R are </SPAN></FONT></FONT></FONT>
+</P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>Numeric
+	(real or decimal)</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>Integer</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>Complex</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>Logical</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>Character</B></SPAN></FONT></FONT></FONT></P>
+</UL>
+<P><BR><BR>
+</P>
+<P><U><B>Numeric</B></U></SPAN></FONT></FONT></FONT></P>
+<P>Decimal
+values are called&nbsp;numerics&nbsp;in R. It is the default
+computational data type. If we assign a decimal value to a
+variable&nbsp;x&nbsp;as follows,&nbsp;x&nbsp;will be of numeric type.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>#
+x&nbsp;=&nbsp; 10.5	#&nbsp;assign&nbsp;a&nbsp;decimal&nbsp;value&nbsp;</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><SPAN STYLE="background: #ffff00">x
+&lt;- 10.5	# preferred assignment
+operator</SPAN><BR>x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	#&nbsp;print&nbsp;the&nbsp;value&nbsp;of&nbsp;x&nbsp;<BR><FONT COLOR="#00b050">10.5&nbsp;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P><B><SPAN STYLE="background: #ffff00">Important
+note – in R the preferred assignment operator is &lt;- as opposed
+to = (both will work). The = operator is required for specifying
+named parameter</SPAN></B></SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>lm(data
+= test.var, formula = z~x+y)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><BR></SPAN></B></FONT></FONT></FONT><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>class(x)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;print&nbsp;the&nbsp;class&nbsp;name&nbsp;of&nbsp;x&nbsp;<BR><FONT COLOR="#00b050">&quot;numeric&quot;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Even
+if we assign an integer to a variable&nbsp;k, it is still being saved
+as a numeric value.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>(k&nbsp;&lt;-&nbsp;1)	#
+Here we assign and the parantheses force a print of the
+assignment&nbsp;<BR><FONT COLOR="#00b050">1&nbsp;</FONT><BR></SPAN></B></FONT></FONT></FONT><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>class(k)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;print&nbsp;the&nbsp;class&nbsp;name&nbsp;of&nbsp;k&nbsp;<BR><FONT COLOR="#00b050">&quot;numeric&quot;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>The
+fact that&nbsp;k&nbsp;is&nbsp;not&nbsp;an integer can be confirmed
+with the&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>is.integer</SPAN></B></FONT></FONT></FONT>&nbsp;function.
+We will discuss how to create an integer in our&nbsp;<A HREF="http://www.r-tutor.com/r-introduction/basic-data-types/integer"><SPAN STYLE="text-decoration: none">next
+tutorial</SPAN></FONT></A>&nbsp;on the integer type.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>is.integer(k)&nbsp;&nbsp;#&nbsp;is&nbsp;k&nbsp;an&nbsp;integer?&nbsp;<BR><FONT COLOR="#00b050">FALSE</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P><U><B>Integer</B></U></SPAN></FONT></FONT></FONT></P>
+<P>In
+order to create an&nbsp;integer&nbsp;variable in R, we invoke
+the&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>as.integer</SPAN></B></FONT></FONT></FONT>&nbsp;function.
+We can be assured that&nbsp;y&nbsp;is indeed an integer by applying
+the&nbsp;is.integer&nbsp;function.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>(y&nbsp;&lt;-&nbsp;as.integer(3))&nbsp;<BR><FONT COLOR="#00b050">3&nbsp;</FONT><BR></SPAN></B></FONT></FONT></FONT><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>class(y)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;print&nbsp;the&nbsp;class&nbsp;name&nbsp;of&nbsp;y&nbsp;<BR><FONT COLOR="#00b050">&quot;integer&quot;&nbsp;</FONT><BR></SPAN></B></FONT></FONT></FONT><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>is.integer(y)	#&nbsp;is&nbsp;y&nbsp;an&nbsp;integer?&nbsp;<BR><FONT COLOR="#00b050">TRUE</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>We
+can coerce a numeric value into an integer with the
+same&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>as.integer</SPAN></B></FONT></FONT></FONT>&nbsp;function.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>as.integer(3.14)&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;coerce&nbsp;a&nbsp;numeric&nbsp;value&nbsp;<BR><FONT COLOR="#00b050">3</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>And
+we can parse a string for decimal values in much the same way.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>as.integer(&quot;5.27&quot;)&nbsp;&nbsp;#&nbsp;coerce&nbsp;a&nbsp;decimal&nbsp;string&nbsp;<BR><FONT COLOR="#00b050">5</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>On
+the other hand, it is erroneous trying to parse a non-decimal string.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>as.integer(&quot;Joe&quot;)&nbsp;&nbsp;&nbsp;#&nbsp;coerce&nbsp;an&nbsp;non−decimal&nbsp;string&nbsp;</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">NA&nbsp;<BR>Warning&nbsp;message:&nbsp;<BR>NAs&nbsp;introduced&nbsp;by&nbsp;coercion</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Often,
+it is useful to perform arithmetic on&nbsp;<A HREF="http://www.r-tutor.com/node/127"><SPAN STYLE="text-decoration: none">logical
+values</SPAN></FONT></A>. Like the C language,&nbsp;TRUE&nbsp;has the
+value 1, while&nbsp;FALSE&nbsp;has value 0.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>as.integer(TRUE)&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;the&nbsp;numeric&nbsp;value&nbsp;of&nbsp;TRUE&nbsp;<BR><FONT COLOR="#00b050">1</FONT>&nbsp;<BR></SPAN></B></FONT></FONT></FONT><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>as.integer(FALSE)&nbsp;&nbsp;&nbsp;#&nbsp;the&nbsp;numeric&nbsp;value&nbsp;of&nbsp;FALSE&nbsp;<BR><FONT COLOR="#00b050">0</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P><U><B>Complex</B></U></SPAN></FONT></FONT></FONT></P>
+<P>A&nbsp;complex&nbsp;value
+in R is defined via the pure imaginary value&nbsp;i.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>(z&nbsp;&lt;-&nbsp;1&nbsp;+&nbsp;2i)	#&nbsp;create&nbsp;a&nbsp;complex&nbsp;number&nbsp;and
+print<BR><FONT COLOR="#00b050">1+2i&nbsp;</FONT><BR></SPAN></B></FONT></FONT></FONT><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>class(z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;print&nbsp;the&nbsp;class&nbsp;name&nbsp;of&nbsp;z&nbsp;<BR><FONT COLOR="#00b050">&quot;complex&quot;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>The
+following gives an error as&nbsp;−1&nbsp;is not a complex value.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>sqrt(−1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;square&nbsp;root&nbsp;of&nbsp;−1&nbsp;<BR><FONT COLOR="#00b050">NaN&nbsp;<BR>Warning&nbsp;message:&nbsp;<BR>In&nbsp;sqrt(</FONT><FONT COLOR="#00b050">−</FONT><FONT COLOR="#00b050">1)&nbsp;:&nbsp;NaNs&nbsp;produced</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Instead,
+we have to use the complex value&nbsp;−1 + 0i.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>sqrt(−1+0i)&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;square&nbsp;root&nbsp;of&nbsp;−1+0i&nbsp;<BR><FONT COLOR="#00b050">0+1i</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>An
+alternative is to coerce&nbsp;−1&nbsp;into a complex value.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>sqrt(as.complex(−1))&nbsp;<BR><FONT COLOR="#00b050">0+1i</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><U><B>Logical</B></U></SPAN></FONT></FONT></FONT></P>
+<P>A&nbsp;logical&nbsp;value
+is often created via comparison between variables.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>x&nbsp;&lt;-&nbsp;1;&nbsp;y&nbsp;&lt;-&nbsp;2	#
+Multiple commands on one line require <SPAN STYLE="background: #ffff00">;</SPAN>
+as separator<BR>(z&nbsp;&lt;-&nbsp;x&nbsp;&gt;&nbsp;y)	#&nbsp;is&nbsp;x&nbsp;larger&nbsp;than&nbsp;y?&nbsp;<BR><FONT COLOR="#00b050">FALSE&nbsp;</FONT><BR></SPAN></B></FONT></FONT></FONT><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>class(z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;print&nbsp;the&nbsp;class&nbsp;name&nbsp;of&nbsp;z&nbsp;<BR><FONT COLOR="#00b050">&quot;logical&quot;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>Standard
+logical operations are&nbsp;&quot;&amp;&quot;&nbsp;(and),&nbsp;&quot;|&quot;&nbsp;(or),
+and&nbsp;&quot;!&quot;&nbsp;(negation).</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>u&nbsp;&lt;-&nbsp;TRUE;&nbsp;v&nbsp;&lt;-&nbsp;FALSE&nbsp;	<BR>u&nbsp;&amp;&nbsp;v&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;u&nbsp;AND&nbsp;v<BR><FONT COLOR="#00b050">FALSE&nbsp;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><BR>u&nbsp;|&nbsp;v&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;u&nbsp;OR&nbsp;v&nbsp;<BR><FONT COLOR="#00b050">TRUE</FONT>&nbsp;<BR></SPAN></B></FONT></FONT></FONT><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>!u&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;negation&nbsp;of&nbsp;u&nbsp;<BR><FONT COLOR="#00b050">FALSE</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Further
+details and related logical operations can be found in the R
+documentation.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>help(&quot;&amp;&quot;)	#
+This works for all R commands and functions</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><U><B>Character</B></U></SPAN></FONT></FONT></FONT></P>
+<P>A&nbsp;character&nbsp;object
+is used to represent string values in R. We convert objects into
+character values with the&nbsp;as.character()&nbsp;function:</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>(x&nbsp;&lt;-&nbsp;as.character(3.14))<BR><FONT COLOR="#00b050">&quot;3.14&quot;&nbsp;</FONT><BR></SPAN></B></FONT></FONT></FONT><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>class(x)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;print&nbsp;the&nbsp;class&nbsp;name&nbsp;of&nbsp;x&nbsp;<BR><FONT COLOR="#00b050">&quot;character&quot;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Two
+character values can be concatenated with the&nbsp;paste&nbsp;function.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>fname&nbsp;&lt;-&nbsp;&quot;Joe&quot;;&nbsp;lname&nbsp;=&quot;Smith&quot;&nbsp;<BR>paste(fname,&nbsp;lname)&nbsp;<BR><FONT COLOR="#00b050">&quot;Joe&nbsp;Smith&quot;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>However,
+it is often more convenient to create a readable string with
+the&nbsp;sprintf&nbsp;function, which has a C language syntax.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>sprintf(&quot;%s&nbsp;has&nbsp;%d&nbsp;dollars&quot;,&nbsp;&quot;Sam&quot;,&nbsp;100)&nbsp;<BR><FONT COLOR="#00b050">&quot;Sam&nbsp;has&nbsp;100&nbsp;dollars&quot;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>To
+extract a substring, we apply the&nbsp;substr&nbsp;function. Here is
+an example showing how to extract the substring between the third and
+twelfth positions in a string.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>substr(&quot;Mary&nbsp;has&nbsp;a&nbsp;little&nbsp;lamb.&quot;,&nbsp;start=3,&nbsp;stop=12)&nbsp;<BR><FONT COLOR="#00b050">&quot;ry&nbsp;has&nbsp;a&nbsp;l&quot;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>And
+to replace the first occurrence of the word &quot;little&quot; by
+another word &quot;big&quot; in the string, we apply
+the&nbsp;sub&nbsp;function.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>sub(&quot;little&quot;,&nbsp;&quot;big&quot;,&nbsp;&quot;Mary&nbsp;has&nbsp;a&nbsp;little&nbsp;lamb.&quot;)&nbsp;<BR><FONT COLOR="#00b050">&quot;Mary&nbsp;has&nbsp;a&nbsp;big&nbsp;lamb.&quot;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>More
+functions for string manipulation can be found in the R
+documentation.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>&gt;&nbsp;help(&quot;sub&quot;)</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<OL START=2>
+	<OL START=8>
+		<LI><P><FONT COLOR="#ff0000"><B>R
+		DATA STRUCTURES</SPAN></B></FONT></FONT></FONT></P>
+	</OL>
+</OL>
+<P>In
+statistics and data science we generally work with large sets of data
+that are comprised of the above data types and these sets are
+generally stored in data structures. In statistics, there are two
+important groups of data that are routinely stored in data
+structures;</SPAN></FONT></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>Categorical
+	variables</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>Continuous
+	variables</B></SPAN></FONT></FONT></FONT></P>
+</UL>
+<P><BR><BR>
+</P>
+<P>The
+following descriptions are from <A HREF="http://slideplayer.com/slide/2412766/">http://slideplayer.com/slide/2412766/</A>
+<B> </B>2/18/17</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><FONT COLOR="#000000"><B><SPAN STYLE="background: #ffff00">Categorical</SPAN></B></FONT><FONT COLOR="#000000"><B><SPAN STYLE="background: #ffff00">&nbsp;</SPAN></B></FONT><FONT COLOR="#000000"><B><SPAN STYLE="background: #ffff00">variables</SPAN></B></FONT><FONT COLOR="#000000">
+are also known as </FONT><FONT COLOR="#000000"><B>discrete</B></FONT><FONT COLOR="#000000">
+or qualitative variables. </FONT>A <B>discrete variable</B> is
+countable in a finite amount of time. <FONT COLOR="#000000">Categorical
+variables can be further categorized as either</FONT></SPAN></FONT></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Nominal</SPAN></B>
+	which are categorical variables that have two or more categories,
+	but which do <B><SPAN STYLE="background: #ffff00">not have an
+	intrinsic order</SPAN></B>. For example, a real estate agent could
+	classify their types of property into distinct categories such as
+	houses, condos, co-ops or bungalows</SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Ordinal</SPAN></B><FONT COLOR="#000000">&nbsp;which
+	</FONT>are categorical variables that have two or more categories
+	just like nominal variables only the <B><SPAN STYLE="background: #ffff00">categories
+	can also be ordered or ranked</SPAN></B>. So if you asked someone if
+	they liked the policies of the Democratic Party and they could
+	answer either &quot;Not very much&quot;, &quot;They are OK&quot; or
+	&quot;Yes, a lot&quot; then you have an ordinal variable.</SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><FONT COLOR="#000000"><B>Dichotomous
+	</B></FONT><FONT COLOR="#000000">refers to a categorical variable
+	with only 2 possible levels (e.g., gender, any question you answer
+	with yes or no – own car, house etc. flip coin – assuming no
+	edges).</FONT></SPAN></FONT></FONT></FONT></P>
+</UL>
+<P STYLE="margin-left: 0.2in; text-indent: -0.2in; margin-top: 0.08in; line-height: 100%">
+<BR><BR>
+</P>
+<P>Machine
+learning algorithms that use categorical variables are typically used
+to classify data. </SPAN></FONT></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P><B><SPAN STYLE="background: #ffff00">Continuous
+variable</SPAN></B><B>s</B> have an infinite number of possible
+values (i.e., a real number – e.g., true height, weight, or time.
+<FONT COLOR="#000000">Continuous variables can be further categorized
+as either&nbsp;</FONT><FONT COLOR="#000000"><B>interval</B></FONT><FONT COLOR="#000000">&nbsp;or&nbsp;</FONT><FONT COLOR="#000000"><B>ratio</B></FONT><FONT COLOR="#000000">
+variables.</FONT></SPAN></FONT></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Interval</SPAN></B>&nbsp;variables
+	are variables for which their central characteristic is that they
+	can be measured along a continuum and they have a numerical value
+	(for example, temperature measured in degrees Celsius or
+	Fahrenheit). So the difference between 20C and 30C is the same as
+	30C to 40C. However, temperature measured in degrees Celsius or
+	Fahrenheit is <B>NOT</B> a&nbsp;<U>ratio</U>&nbsp;variable.</SPAN></FONT></FONT></FONT></P>
+</UL>
+<P><B><SPAN STYLE="background: #ffff00">Ratio</SPAN></B>&nbsp;variables
+are interval variables, but with the added condition that 0 (zero) of
+the measurement indicates that there is none of that variable. So,
+temperature measured in degrees Celsius or Fahrenheit is not a ratio
+variable because 0C does not mean there is no temperature. However,
+temperature measured in Kelvin is a ratio variable as 0 Kelvin (often
+called absolute zero) indicates that there is no temperature
+whatsoever. Other examples of ratio variables include height, mass,
+distance and many more. The name &quot;ratio&quot; reflects the fact
+that you can use the ratio of measurements. So, for example, a
+distance of ten meters is twice the distance of 5 meters.</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>From
+<A HREF="https://swcarpentry.github.io/r-novice-inflammation/13-supp-data-structures/">https://swcarpentry.github.io/r-novice-inflammation/13-supp-data-structures/</A>
+</SPAN></FONT></FONT></FONT>
+</P>
+<P>R
+has many&nbsp;<SPAN STYLE="font-weight: normal">data structures</SPAN>.
+Thee primary one we are interested in are</SPAN></FONT></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>atomic
+	vector</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>list</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>array
+	/ matrix</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>data
+	frame</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>factors</B></SPAN></FONT></FONT></FONT></P>
+</UL>
+<P><BR><BR>
+</P>
+<P><U><B>Atomic
+Vectors</B></U></SPAN></FONT></FONT></FONT></P>
+<P>A
+vector is the most common and basic data structure in R and is the
+workhorse of R. Technically, vectors can be one of two types:</SPAN></FONT></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>atomic
+	vectors</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>lists</B></SPAN></FONT></FONT></FONT></P>
+</UL>
+<P><BR><BR>
+</P>
+<P>although
+the term “vector” most commonly refers to the atomic types not to
+lists.</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>The
+Different Vector Modes</B></SPAN></FONT></FONT></FONT></P>
+<P>A
+vector is a collection of elements (all of which must be the same
+mode) that are most commonly of mode
+&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>character,&nbsp;logical,&nbsp;integer&nbsp;</SPAN></B></FONT></FONT></FONT>or<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>&nbsp;numeric</SPAN></B></FONT></FONT></FONT>.</SPAN></FONT></FONT></FONT></P>
+<P>You
+can create an empty vector with&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>vector()</SPAN></B></FONT></FONT></FONT>.
+(By default the mode is&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>logical</SPAN></B></FONT></FONT></FONT>.
+You can be more explicit as shown in the examples below.) It is more
+common to use direct constructors such as&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>character()</SPAN></B></FONT></FONT></FONT>,&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>numeric()</SPAN></B></FONT></FONT></FONT>,
+etc.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">vector()
+	# an empty 'logical' (the default) vector</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">logical(0)</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">vector(&quot;character&quot;,
+length = 5) 	# a vector of mode 'character' with 5 elements</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">&quot;&quot;
+&quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot;</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">character(5)
+	# the same thing, but using the constructor directly</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">&quot;&quot;
+&quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot;</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">numeric(5)
+  	# a numeric vector with 5 elements</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">0
+0 0 0 0</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">logical(5)
+ 	# a logical vector with 5 elements</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">FALSE
+FALSE FALSE FALSE FALSE</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Generally
+you will create vectors by directly specifying their content. R will
+then guess the appropriate mode of storage for the vector. For
+instance:</SPAN></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">(x
+&lt;- c(1, 2, 3))		# The c function here means concatenate or combine</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">1
+2 3</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>will
+create a vector&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>x&nbsp;</SPAN></B></FONT></FONT></FONT>of
+mode&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>numeric</SPAN></B></FONT></FONT></FONT>.
+These are the most common kind, and are treated as <B>double
+precision real numbers</B>. If you wanted to explicitly create
+integers, you need to add an&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>L</SPAN></B></FONT></FONT></FONT>&nbsp;to
+each element (or&nbsp;coerce&nbsp;to the integer type
+using&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>as.integer()</SPAN></B></FONT></FONT></FONT>).</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">x1
+&lt;- c(1L, 2L, 3L)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Using&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>TRUE</SPAN></B></FONT></FONT></FONT>&nbsp;and&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>FALSE</SPAN></B></FONT></FONT></FONT>&nbsp;will
+create a vector of mode<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>&nbsp;logical</SPAN></B></FONT></FONT></FONT>:</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">y
+&lt;- c(TRUE, TRUE, FALSE, FALSE)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>While
+using quoted text will create a vector of mode&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>character</SPAN></B></FONT></FONT></FONT>:</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">z
+&lt;- c(&quot;Sarah&quot;, &quot;Tracy&quot;, &quot;Jon&quot;)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>Examining
+Vectors</B></SPAN></FONT></FONT></FONT></P>
+<P>The
+functions&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>typeof()</SPAN></B></FONT></FONT></FONT>,&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>length()</SPAN></B></FONT></FONT></FONT>,&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>class()</SPAN></B></FONT></FONT></FONT>&nbsp;and&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>str()</SPAN></B></FONT></FONT></FONT>&nbsp;provide
+useful information about your vectors and R objects in general.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">typeof(z)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">&quot;character&quot;</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">length(z)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">3</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">class(z)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">&quot;character&quot;</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">str(z)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"> <FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">chr
+[1:3] &quot;Sarah&quot; &quot;Tracy&quot; &quot;Jon&quot;</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>Adding
+Elements</B></SPAN></FONT></FONT></FONT></P>
+<P>The
+function&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>c()
+</SPAN></B></FONT></FONT></FONT>can also be used to add elements to a
+vector.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">(z
+&lt;- c(z, &quot;Annette&quot;))</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">&quot;Sarah&quot;
+  &quot;Tracy&quot;   &quot;Jon&quot;     &quot;Annette&quot;</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">(z
+&lt;- c(c(&quot;Greg&quot;,&quot;Mary&quot;,&quot;Linda&quot;), z))</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">[1]
+&quot;Greg&quot;    &quot;Sarah&quot;   &quot;Tracy&quot;   &quot;Jon&quot;
+    &quot;Annette&quot;</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><B>Vectors
+from a Sequence of Numbers</B></SPAN></FONT></FONT></FONT></P>
+<P>You
+can create vectors as a sequence of numbers.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">(series
+&lt;- 1:10)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">1
+ 2  3  4  5  6  7  8  9 10</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">seq(10)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">1
+ 2  3  4  5  6  7  8  9 10</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">seq(from
+= 1, to = 10, by = 0.25)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">[1]
+  1.00  1.25  1.50  1.75  2.00  2.25  2.50  2.75</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">[9]
+  3.00  3.25  3.50  3.75  4.00  4.25  4.50  4.75</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">[17]
+ 5.00  5.25  5.50  5.75  6.00  6.25  6.50  6.75</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">[25]
+ 7.00  7.25  7.50  7.75  8.00  8.25  8.50  8.75</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">[33]
+ 9.00  9.25  9.50  9.75 10.00</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>Missing
+Data</B></SPAN></FONT></FONT></FONT></P>
+<P>R
+supports missing data in vectors. They are represented as&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>NA</SPAN></B></FONT></FONT></FONT>&nbsp;(Not
+Available) and can be used for all the vector types covered in this
+lesson:</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">x
+&lt;- c(0.5, NA, 0.7)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">x
+&lt;- c(TRUE, FALSE, NA)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">x
+&lt;- c(&quot;a&quot;, NA, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">x
+&lt;- c(1+5i, 2-3i, NA)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>The
+function&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>is.na()</SPAN></B></FONT></FONT></FONT>&nbsp;indicates
+the elements of the vectors that represent missing data, and the
+function&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>anyNA()</SPAN></B></FONT></FONT></FONT>&nbsp;returns&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>TRUE</SPAN></B></FONT></FONT></FONT>&nbsp;if
+the vector contains any missing values:</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">x
+&lt;- c(&quot;a&quot;, NA, &quot;c&quot;, &quot;d&quot;, NA)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">y
+&lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;,
+&quot;e&quot;)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">is.na(x)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">FALSE
+ TRUE FALSE FALSE  TRUE</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">is.na(y)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">FALSE
+FALSE FALSE FALSE FALSE</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">anyNA(x)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">TRUE</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">anyNA(y)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">FALSE</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><B>Other
+Special Values</B></SPAN></FONT></FONT></FONT></P>
+<P><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>Inf&nbsp;</SPAN></B></FONT></FONT></FONT>is
+infinity. You can have either positive or negative infinity.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">1/0</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">Inf</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>NaN</SPAN></B></FONT></FONT></FONT>&nbsp;means
+Not a Number. It’s an undefined value.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">0/0</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">NaN</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>What
+Happens When You Mix Types Inside a Vector? </B></SPAN></FONT></FONT></FONT>
+</P>
+<P>R
+will create a resulting vector with a mode that can most easily
+accommodate all the elements it contains. This conversion between
+modes of storage is called “coercion”. When R converts the mode
+of storage based on its content, it is referred to as “implicit
+coercion”. </SPAN></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">(xx
+&lt;- c(1.7, &quot;a&quot;))</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT FACE="Lucida Console, serif">&quot;1.7&quot;
+&quot;a&quot;  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">(xx
+&lt;- c(TRUE, 2))</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">1
+2</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">(xx
+&lt;- c(&quot;a&quot;, TRUE))</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">&quot;</FONT><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">a&quot;
+   &quot;TRUE&quot; </FONT></SPAN></FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">(xx
+&lt;- c(1.3, TRUE))</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">1.3
+1.0</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>You
+can also control how vectors are coerced explicitly using
+the&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>as.&lt;class_name&gt;()</SPAN></B></FONT></FONT></FONT>&nbsp;functions:</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">as.numeric(&quot;1&quot;)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">1</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">as.character(1:2)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">&quot;1&quot;
+&quot;2&quot;</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><B>Objects
+Attributes</B></SPAN></FONT></FONT></FONT></P>
+<P>Objects
+can have&nbsp;<SPAN STYLE="font-weight: normal">attributes</SPAN>.
+These include:</SPAN></FONT></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>names</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>dimnames</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>dim</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>class</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>attributes
+	(contain metadata)</B></SPAN></FONT></FONT></FONT></P>
+</UL>
+<P><BR><BR>
+</P>
+<P>You
+can also glean other attribute-like information such as length (works
+on vectors and lists) or number of characters (for character
+strings).</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">length(1:10)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">10</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">nchar(&quot;Software
+Carpentry&quot;)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">18</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><U><B>Matrix</B></U></SPAN></FONT></FONT></FONT></P>
+<P>In
+R matrices are an extension of the numeric or character vectors. They
+are not a separate type of object but simply an atomic vector with
+dimensions; the number of rows and columns.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">(m
+&lt;- matrix(nrow = 2, ncol = 2))</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+    <FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">[,1]
+[,2]</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">[1,]
+  NA   NA</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">[2,]
+  NA   NA</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">dim(m)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">2
+2</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Matrices
+in R are <B>filled column-wise</B>.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">m
+&lt;- matrix(1:6, nrow = 2, ncol = 3)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Other
+ways to construct a matrix</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">m
+     &lt;- 1:10</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">dim(m)
+&lt;- c(2, 5)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>This
+takes a vector and transforms it into a matrix with 2 rows and 5
+columns.</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Another
+way is to bind columns or rows using&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>cbind()</SPAN></B></FONT></FONT></FONT>&nbsp;and&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>rbind()</SPAN></B></FONT></FONT></FONT>.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">x
+&lt;- 1:3</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">y
+&lt;- 10:12</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">cbind(x,
+y)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+    <FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">x
+ y</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">[1,]
+1 10</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">[2,]
+2 11</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">[3,]
+3 12</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">rbind(x,
+y)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+ <FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">[,1]
+[,2] [,3]</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">x
+   1    2    3</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">y
+  10   11   12</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>You
+can also use the&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>byrow</SPAN></B></FONT></FONT></FONT>&nbsp;argument
+to specify how the matrix is filled. From R’s own documentation:</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">(mdat
+&lt;- matrix(c(1,2,3, 11,12,13), nrow = 2, ncol = 3, byrow = TRUE))</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+    <FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">[,1]
+[,2] [,3]</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">[1,]
+   1    2    3</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">[2,]
+  11   12   13</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Elements
+of a matrix can be referenced by specifying the index along each
+dimension (e.g. “row” and “column”) in single square
+brackets.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">mdat[2,3]</FONT></FONT><FONT FACE="Courier New, serif">	#
+Note indiexing is down by row then column</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">[1]
+13</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">mdat[2,]	#
+Second row</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">11
+12 13</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">mdat[,2]	#
+Second column</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT FACE="Lucida Console, serif">2
+12</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">mdat[5]		#
+5</FONT></FONT><FONT FACE="Courier New, serif"><SUP>th</SUP></FONT></FONT><FONT FACE="Courier New, serif">
+element in the matrix counting down each column row by row</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT FACE="Lucida Console, serif">3</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><U><B>List</B></U></SPAN></FONT></FONT></FONT></P>
+<P>In
+R lists act as containers. Unlike atomic vectors, the contents of a
+list are <B>not restricted to a single mode</B> and can encompass any
+mixture of data types. Lists are sometimes called <B>generic vectors</B>,
+because the elements of a list can by of any type of R object, even
+lists containing further lists. This property makes them
+fundamentally different from atomic vectors.</SPAN></FONT></FONT></FONT></P>
+<P>A
+list is a special type of vector. Each element can be a different
+type.</SPAN></FONT></FONT></FONT></P>
+<P>Create
+lists using&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>list()</SPAN></B></FONT></FONT></FONT>&nbsp;or
+coerce other objects using&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>as.list()</SPAN></B></FONT></FONT></FONT>.
+An empty list of the required length can be created using&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>vector()</SPAN></B></FONT></FONT></FONT></SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">(x
+&lt;- list(1, &quot;a&quot;, TRUE, 1+4i))</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">[[1]]</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">[1]
+1</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050"><FONT FACE="Consolas, serif">[[2]]</FONT></FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050"><FONT FACE="Consolas, serif">[1]
+&quot;a&quot;</FONT></FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050"><FONT FACE="Consolas, serif">[[3]]</FONT></FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050"><FONT FACE="Consolas, serif">[1]
+TRUE</FONT></FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050"><FONT FACE="Consolas, serif">[[4]]</FONT></FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050"><FONT FACE="Consolas, serif">[1]
+1+4i</FONT></FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">x
+&lt;- vector(&quot;list&quot;, length = 5) 	# empty list</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">length(x)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">5</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>The
+content of elements of a list can be retrieved by using double square
+brackets.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">x[[1]]</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">NULL</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Vectors
+can be coerced to lists as follows:</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">x
+&lt;- 1:10</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">x
+&lt;- as.list(x)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">length(x)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">10</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>class(x[1])</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">&quot;list&quot;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>class(x[[1]])</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">&quot;integer&quot;</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"> </SPAN></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P>Elements
+of a list can be named (i.e. lists can have the<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>
+names</SPAN></B></FONT></FONT></FONT>&nbsp;atttibute)</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">(</FONT></FONT><FONT FACE="Courier New, serif">xlist
+&lt;- list(a = &quot;Karthik Ram&quot;, b = 1:10, data = head(iris))</FONT></FONT><FONT FACE="Courier New, serif">)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">$a</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">[1]
+&quot;Karthik Ram&quot;</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">$b</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">[1]
+ 1  2  3  4  5  6  7  8  9 10</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">$data</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+ <FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">Sepal.Length
+Sepal.Width Petal.Length Petal.Width Species</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">1
+         5.1         3.5          1.4         0.2  setosa</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">2
+         4.9         3.0          1.4         0.2  setosa</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">3
+         4.7         3.2          1.3         0.2  setosa</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">4
+         4.6         3.1          1.5         0.2  setosa</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">5
+         5.0         3.6          1.4         0.2  setosa</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">6
+         5.4         3.9          1.7         0.4  setosa</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">names(xlist)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">[1]
+&quot;a&quot;    &quot;b&quot;    &quot;data&quot;</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Lists
+can be extremely useful inside functions. Because the functions in R
+are able to return only a single object, you can “staple”
+together lots of different kinds of results into a single object that
+a function can return.</SPAN></FONT></FONT></FONT></P>
+<P>A
+list does <B>not print to the console like a vector</B>. Instead,
+each element of the list starts on a new line.</SPAN></FONT></FONT></FONT></P>
+<P>Elements
+are indexed by double brackets. Single brackets will still return
+a(nother) list. If the elements of a list are named, they can be
+referenced by the&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>$</SPAN></B></FONT></FONT></FONT>&nbsp;notation
+(i.e.&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>xlist$data</SPAN></B></FONT></FONT></FONT>)
+.</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><U><B>Data
+Frame</B></U></SPAN></FONT></FONT></FONT></P>
+<P>A
+data frame is a very important data type in R and is used for tabular
+data especially in statistical and data science applications and we
+will be using it extensively.</SPAN></FONT></FONT></FONT></P>
+<P>A
+data frame is a&nbsp;<B>special type of list&nbsp;</B>where every
+element of the list has same length (i.e. data frame is a
+“rectangular” list).</SPAN></FONT></FONT></FONT></P>
+<P>Data
+frames can have additional attributes such as&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>rownames()</SPAN></B></FONT></FONT></FONT>,
+which can be useful for annotating data,
+like&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>subject_id</SPAN></B></FONT></FONT></FONT>&nbsp;or&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>sample_id</SPAN></B></FONT></FONT></FONT>.
+But most of the time they are not used.</SPAN></FONT></FONT></FONT></P>
+<P>Some
+additional information on data frames:</SPAN></FONT></FONT></FONT></P>
+<P>Usually
+created by&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>read.csv()</SPAN></B></FONT></FONT></FONT>&nbsp;and&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>read.table()</SPAN></B></FONT></FONT></FONT>
+when importing the data into R.</SPAN></FONT></FONT></FONT></P>
+<P>Assuming
+all columns in a data frame are of same type, a data frame can be
+converted to a matrix with <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>data.matrix()</SPAN></B></FONT></FONT></FONT>
+(preferred) or <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>as.matrix().</SPAN></B></FONT></FONT></FONT>
+Otherwise type coercion will be enforced and the results may not
+always be what you expect.</SPAN></FONT></FONT></FONT></P>
+<P>Can
+also create a new data frame with<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>&nbsp;data.frame()</SPAN></B></FONT></FONT></FONT>&nbsp;function.</SPAN></FONT></FONT></FONT></P>
+<P>Find
+the number of rows and columns with&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>nrow(dat)</SPAN></B></FONT></FONT></FONT>&nbsp;and<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>&nbsp;ncol(dat)</SPAN></B></FONT></FONT></FONT>,
+respectively.</SPAN></FONT></FONT></FONT></P>
+<P>Rownames
+are often automatically generated and look like 1, 2, …, n.
+Consistency in numbering of rownames may not be honored when rows are
+reshuffled or subset.</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>Creating
+Data Frames by Hand</B></SPAN></FONT></FONT></FONT></P>
+<P>To
+create data frames by hand:</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">(dat
+&lt;- data.frame(id = letters[1:10], x = 1:10, y = 11:20))</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+  <FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">id
+ x  y</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">1
+  a  1 11</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">2
+  b  2 12</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">3
+  c  3 13</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">4
+  d  4 14</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">5
+  e  5 15</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">6
+  f  6 16</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">7
+  g  7 17</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">8
+  h  8 18</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">9
+  i  9 19</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">10
+ j 10 20</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>Useful
+Data Frame Functions</B></SPAN></FONT></FONT></FONT></P>
+<P><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>head()</SPAN></B></FONT></FONT></FONT>&nbsp;-
+shows first 6 rows</SPAN></FONT></FONT></FONT></P>
+<P><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>tail()</SPAN></B></FONT></FONT></FONT>&nbsp;-
+shows last 6 rows</SPAN></FONT></FONT></FONT></P>
+<P><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>dim()</SPAN></B></FONT></FONT></FONT>&nbsp;-
+returns the dimensions of data frame (i.e. number of rows and number
+of columns)</SPAN></FONT></FONT></FONT></P>
+<P><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>nrow()</SPAN></B></FONT></FONT></FONT>&nbsp;-
+number of rows</SPAN></FONT></FONT></FONT></P>
+<P><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>ncol()</SPAN></B></FONT></FONT></FONT>&nbsp;-
+number of columns</SPAN></FONT></FONT></FONT></P>
+<P><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>str()</SPAN></B></FONT></FONT></FONT>&nbsp;-
+structure of data frame - name, type and preview of data in each
+column</SPAN></FONT></FONT></FONT></P>
+<P><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>names()</SPAN></B></FONT></FONT></FONT>&nbsp;-
+shows the&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>names</SPAN></B></FONT></FONT></FONT>&nbsp;attribute
+for a data frame, which gives the column names.</SPAN></FONT></FONT></FONT></P>
+<P><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>sapply(dataframe,
+class)</SPAN></B></FONT></FONT></FONT>&nbsp;- shows the class of each
+column in the data frame</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>See
+that it is actually a special list:</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">is.list(dat)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">TRUE</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">class(dat)</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">&quot;data.frame&quot;</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P>Because
+data frames are rectangular, elements of data frame can be referenced
+by specifying the row and the column index in single square brackets
+(similar to matrix).</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">dat[1,3]</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050"><FONT FACE="Consolas, serif">11</FONT></FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>As
+data frames are also lists, it is possible to refer to columns (which
+are elements of such list) using the list notation, i.e. either
+double square brackets or a&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>$</SPAN></B></FONT></FONT></FONT>.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">dat[[&quot;y&quot;]]</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">11
+12 13 14 15 16 17 18 19 20</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif">dat$y</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT FACE="Courier New, serif"><FONT COLOR="#00b050">11
+12 13 14 15 16 17 18 19 20</FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>The
+following table summarizes the one-dimensional and two-dimensional
+data structures in R in relation to diversity of data types they can
+contain.</SPAN></FONT></FONT></FONT></P>
+<TABLE WIDTH=576 CELLPADDING=8 CELLSPACING=0 BGCOLOR="#ffffff">
+	<COL WIDTH=155>
+	<COL WIDTH=179>
+	<COL WIDTH=194>
+	<THEAD>
+		<TR VALIGN=BOTTOM>
+			<TD WIDTH=155 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><B>Dimensions</B></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=179 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><B>Homogenous</B></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=194 BGCOLOR="#ffffff" STYLE="border-top: none; border-bottom: 1.50pt solid #dddddd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.08in; padding-left: 0in; padding-right: 0in">
+				<P><B>Heterogeneous</B></SPAN></FONT></FONT></FONT></P>
+			</TD>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=155 BGCOLOR="#f9f9f9" STYLE="border-top: 1px solid #dddddd; border-bottom: none; border-left: none; border-right: none; padding-top: 0.08in; padding-bottom: 0in; padding-left: 0in; padding-right: 0in">
+				<P><B>1-D</B></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=179 BGCOLOR="#f9f9f9" STYLE="border-top: 1px solid #dddddd; border-bottom: none; border-left: none; border-right: none; padding-top: 0.08in; padding-bottom: 0in; padding-left: 0in; padding-right: 0in">
+				<P><B>atomic
+				vector</B></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=194 BGCOLOR="#f9f9f9" STYLE="border-top: 1px solid #dddddd; border-bottom: none; border-left: none; border-right: none; padding-top: 0.08in; padding-bottom: 0in; padding-left: 0in; padding-right: 0in">
+				<P><B>list</B></SPAN></FONT></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=155 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #dddddd; border-bottom: none; border-left: none; border-right: none; padding-top: 0.08in; padding-bottom: 0in; padding-left: 0in; padding-right: 0in">
+				<P><B>2-D</B></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=179 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #dddddd; border-bottom: none; border-left: none; border-right: none; padding-top: 0.08in; padding-bottom: 0in; padding-left: 0in; padding-right: 0in">
+				<P><B>matrix</B></SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=194 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #dddddd; border-bottom: none; border-left: none; border-right: none; padding-top: 0.08in; padding-bottom: 0in; padding-left: 0in; padding-right: 0in">
+				<P><B>data
+				frame</B></SPAN></FONT></FONT></FONT></P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P><BR><BR>
+</P>
+<P>Lists
+can contain elements that are themselves muti-dimensional (e.g. a
+lists can contain data frames or another type of objects). Lists can
+also contain elements of any length, therefore list do not
+necessarily have to be “rectangular”. However in order for the
+list to qualify as a data frame, the lenghth of each element has to
+be the same.</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B>Column
+Types in Data Frames</B></SPAN></FONT></FONT></FONT></P>
+<P>Knowing
+that data frames are lists, can columns be of different type?  <B>YES
+but each row in a column must of the same type.</B></SPAN></FONT></FONT></FONT></P>
+<P>What
+type of structure do you expect to see when you explore the structure
+of the<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>&nbsp;iris</SPAN></B></FONT></FONT></FONT>&nbsp;data
+frame? Hint: Use&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>str()</SPAN></B></FONT></FONT></FONT>.</SPAN></FONT></FONT></FONT></P>
+<TABLE WIDTH=765 CELLPADDING=6 CELLSPACING=0 BGCOLOR="#ffffff">
+	<COL WIDTH=753>
+	<TR>
+		<TD WIDTH=753 VALIGN=TOP BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P STYLE="margin-bottom: 0in; background: #ffffff"><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>str(iris)</SPAN></B></FONT></FONT></FONT></P>
+			<P STYLE="margin-bottom: 0in; background: #ffffff"><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">'data.frame':	150
+			obs. of  5 variables:</FONT></SPAN></B></FONT></FONT></FONT></P>
+			<P STYLE="margin-bottom: 0in; background: #ffffff"><FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+			<FONT FACE="Courier New, serif"><B>$ Sepal.Length:
+			num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...</FONT></SPAN></B></FONT></FONT></FONT></P>
+			<P STYLE="margin-bottom: 0in; background: #ffffff"><FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+			<FONT FACE="Courier New, serif"><B>$ Sepal.Width :
+			num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...</FONT></SPAN></B></FONT></FONT></FONT></P>
+			<P STYLE="margin-bottom: 0in; background: #ffffff"><FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+			<FONT FACE="Courier New, serif"><B>$ Petal.Length:
+			num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...</FONT></SPAN></B></FONT></FONT></FONT></P>
+			<P STYLE="margin-bottom: 0in; background: #ffffff"><FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+			<FONT FACE="Courier New, serif"><B>$ Petal.Width :
+			num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...</FONT></SPAN></B></FONT></FONT></FONT></P>
+			<P STYLE="margin-bottom: 0in; background: #ffffff"><FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+			<FONT FACE="Courier New, serif"><B>$ Species     :
+			Factor w/ 3 levels &quot;setosa&quot;,&quot;versicolor&quot;,..: 1
+			1 1 1 1 1 1 1 1 1 ...</FONT></SPAN></B></FONT></FONT></FONT></P>
+			<P><BR>
+			</P>
+		</TD>
+	</TR>
+</TABLE>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><U><B>Factors</B></U></SPAN></FONT></FONT></FONT></P>
+<P>In
+the above example we introduced <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>factor</SPAN></B></FONT></FONT></FONT>
+as a data type for <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>Species</SPAN></B></FONT></FONT></FONT>.</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>From
+<A HREF="https://www.stat.berkeley.edu/classes/s133/factors.html">https://www.stat.berkeley.edu/classes/s133/factors.html</A>
+</SPAN></FONT></FONT></FONT>
+</P>
+<P>In
+R we call a grouping of nominal variables a<B> </B><B><SPAN STYLE="background: #ffff00">factor</SPAN></B>.
+Factors in R are stored as a vector of integer values with a
+corresponding set of character values to use when the factor is
+displayed (we will discuss the vector data structure in more detail
+below). The&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>factor</SPAN></B></FONT></FONT></FONT>
+function is used to create a factor. The only required argument
+to&nbsp;factor&nbsp;is a vector of values which will be returned as a
+vector of factor values. Both numeric and character variables can be
+made into factors, but a factor's levels will always be character
+values. You can see the possible levels for a factor through
+the&nbsp;levels&nbsp;command.</SPAN></FONT></FONT></FONT></P>
+<P>To
+change the order in which the levels will be displayed from their
+default sorted order, the&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>levels
+=&nbsp;argument</SPAN></B></FONT></FONT></FONT> can be given a vector
+of all the possible values of the variable in the order you desire.
+If the ordering should also be used when performing comparisons, use
+the optional&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>ordered
+= TRUE</SPAN></B></FONT></FONT></FONT>&nbsp;argument. In this case,
+the factor is known as an <B>ordered factor</B>.</SPAN></FONT></FONT></FONT></P>
+<P>The
+levels of a factor are used when displaying the factor's values. You
+can change these levels at the time you create a factor by passing a
+vector with the new values through the&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>labels
+= argument</SPAN></B></FONT></FONT></FONT>. Note that this actually
+changes the internal levels of the factor, and to change the labels
+of a factor after it has been created, the assignment form of
+the&nbsp;levels&nbsp;function is used. To illustrate this point,
+consider a factor taking on integer values which we want to display
+as roman numerals.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>data&nbsp;&lt;-&nbsp;c(1,2,2,3,1,2,3,3,1,2,3,3,1)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>(fdata&nbsp;&lt;-&nbsp;factor(data))</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">1&nbsp;2&nbsp;2&nbsp;3&nbsp;1&nbsp;2&nbsp;3&nbsp;3&nbsp;1&nbsp;2&nbsp;3&nbsp;3&nbsp;1</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">Levels:&nbsp;1&nbsp;2&nbsp;3</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>(rdata&nbsp;=&nbsp;factor(data,labels=c(&quot;I&quot;,&quot;II&quot;,&quot;III&quot;)))</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">I&nbsp;&nbsp;&nbsp;II&nbsp;&nbsp;II&nbsp;&nbsp;III&nbsp;I&nbsp;&nbsp;&nbsp;II&nbsp;&nbsp;III&nbsp;III&nbsp;I&nbsp;&nbsp;&nbsp;II&nbsp;&nbsp;III&nbsp;III&nbsp;I</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">Levels:&nbsp;I&nbsp;II&nbsp;III</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>To
+convert the default factor&nbsp;fdata&nbsp;to roman numerals, we use
+the assignment form of the&nbsp;levels&nbsp;function:</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>levels(fdata)&nbsp;=&nbsp;c('I','II','III')</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>fdata</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">I&nbsp;&nbsp;&nbsp;II&nbsp;&nbsp;II&nbsp;&nbsp;III&nbsp;I&nbsp;&nbsp;&nbsp;II&nbsp;&nbsp;III&nbsp;III&nbsp;I&nbsp;&nbsp;&nbsp;II&nbsp;&nbsp;III&nbsp;III&nbsp;I</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">Levels:&nbsp;I&nbsp;II&nbsp;III</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Factors
+represent a very efficient way to store character values, because
+each unique character value is stored only once, and the data itself
+is stored as a vector of integers. Because of this,&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>read.table</SPAN></B></FONT></FONT></FONT>&nbsp;will
+automatically convert character variables to factors unless
+the&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>as.is=</SPAN></B></FONT></FONT></FONT>&nbsp;argument
+is specified. </SPAN></FONT></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P>As
+an example of an <B>ordered factor</B>, let us represent the value of
+five projects. Each project has a status of low, medium, or high:</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>status
+&lt;- c(&quot;Lo&quot;, &quot;Hi&quot;, &quot;Med&quot;, &quot;Med&quot;,
+&quot;Hi&quot;)</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P>Now
+create an ordered factor with this status data and we note the Levels
+output with &lt; or &gt; signs indicating an ordered factor.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>(ordered.status
+&lt;- factor(status, levels=c(&quot;Lo&quot;, &quot;Med&quot;, &quot;Hi&quot;),
+ordered=TRUE))</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">Lo
+Hi Med Med Hi</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">Levels:
+Lo &lt; Med &lt; Hi</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>Ordered
+factors are also printed out in order (not alphabetically like
+non-ordered factors. </SPAN></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>table(ordered.status)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">ordered.status</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B>Lo Med Hi</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B>1  2  2</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>As
+compared to non-ordered factor tables.</SPAN></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>table(status)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">status</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B>Hi Lo Med</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B>2  1  2</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P><BR><BR>
+</P>
+<P><B>DISCUSS
+HW #1</SPAN></B></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><FONT COLOR="#ff0000"><FONT SIZE=5><B>END
+CHAPTER 2</SPAN></B></FONT></FONT></FONT></P>
+<P STYLE="margin-left: 1in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<DIV TYPE=FOOTER>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0in; line-height: 100%"><SDFIELD TYPE=PAGE SUBTYPE=RANDOM FORMAT=PAGE>3</SDFIELD></P>
+	<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+	</P>
+</DIV>
+</BODY>
+</HTML>

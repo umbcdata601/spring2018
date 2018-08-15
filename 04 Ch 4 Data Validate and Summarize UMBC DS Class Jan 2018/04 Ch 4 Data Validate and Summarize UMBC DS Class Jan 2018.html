@@ -1,0 +1,1229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+
+	<TITLE></TITLE>
+</HEAD>
+<BODY>
+<P><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in; line-height: 250%"><FONT COLOR="#767171"><U><B>CHAPTER
+4	DATA VERIFICATION, SUMMARIZATION AND VISUALIZATION 		pp. 87 - 96</SPAN></B></U></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.11in; line-height: 250%"><FONT COLOR="#767171"><U><B>(4.1)	THE
+MACHINE LEARNING PREDICTIVE MODELING PROCESS			p. 88</SPAN></B></U></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.11in; line-height: 250%"><FONT COLOR="#767171"><U><B>(4.2)	DATA
+VERIFICATION AND SUMMARIZATION					p. 89</SPAN></B></U></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<P><FONT COLOR="#ff0000"><U><B>R
+Packages to Install </SPAN></B></U></FONT></FONT></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif">validate</FONT></FONT></FONT></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<OL START=4>
+	<LI><P STYLE="margin-bottom: 0.11in; page-break-before: always"><FONT COLOR="#ff0000"><U><B>DATA
+	VERIFCATION, SUMMARIZATION AND VISUALIZATION </SPAN></B></U></FONT></FONT></FONT>
+	</P>
+</OL>
+<P><BR><BR>
+</P>
+<OL START=4>
+	<OL>
+		<LI><P><FONT COLOR="#ff0000"><B>The
+		Machine Learning Predictive Modeling Process</SPAN></B></FONT></FONT></FONT></P>
+	</OL>
+</OL>
+<P>Before
+we begin the discussion on data verification, summarization and
+visualization, we will review the predictive modeling portion of the
+machine learning process in more detail than in Chapter 1. In Chapter
+1 we showed the figure below</SPAN></FONT></FONT></P>
+<P><IMG SRC="04_Ch_4_Data_Validate_and_Summarize_UMBC_DS_Class__html_d9ad690f.jpg" NAME="Picture 14" ALIGN=BOTTOM WIDTH=454 HEIGHT=591 BORDER=0></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+Which
+can be summarized in the following steps – from
+</SPAN></FONT></FONT><FONT COLOR="#00b0f0"><B>https://machinelearningmastery.com/get-started-in-machine-learning-with-r/</B></FONT></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>Define
+	Problem</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>Prepare
+	Data</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>Evaluate
+	Algorithms</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>Improve
+	Results</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>Present
+	Results</B></SPAN></FONT></FONT></FONT></P>
+</UL>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P>The
+essential tasks within this framework under Prepare Data, are the
+items we will focus on in the in the next several chapters.</SPAN></FONT></FONT></P>
+<OL>
+	<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+	<B><SPAN STYLE="background: #ffff00">Prepare
+	Data </SPAN></B></FONT></FONT>
+	</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Importing Data</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Data Verification</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Data Summarization</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Data Visualization</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Data Cleaning</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Feature Selection</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Data Transforms</FONT></FONT></P>
+	</OL>
+	<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+	<B><SPAN STYLE="background: #ffff00">Evaluate
+	Algorithms </SPAN></B></FONT></FONT>
+	</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Resampling Methods</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Evaluation Metrics</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Spot-Check
+		Algorithms</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Model Selection</FONT></FONT></P>
+	</OL>
+	<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+	<B><SPAN STYLE="background: #ffff00">Improve
+	Results </SPAN></B></FONT></FONT>
+	</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Algorithm Tuning</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Ensemble Methods</FONT></FONT></P>
+	</OL>
+	<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+	<B><SPAN STYLE="background: #ffff00">Present
+	Results </SPAN></B></FONT></FONT>
+	</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Finalize Model</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Make New
+		Predictions</FONT></FONT></P>
+	</OL>
+</OL>
+<P><B>Keep
+in mind this is generally an iterative process as different models as
+data is cleaned in various ways, different models with different
+features are run, modified, adjusted, etc. </SPAN></B></FONT></FONT>
+</P>
+<P>R
+has many packages specifically designed to import data from a
+different sources and different formats so we won’t cover this in
+detail. Go on-line to the appropriate one for the task at-hand. </SPAN></FONT></FONT><B>Also
+we won’t spend much time with the last item, Present Results, but
+the key point here is that all the work you have done up until this
+last item is irrelevant unless you can make some type of prediction
+or inference.</SPAN></B></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<OL START=4>
+	<OL>
+		<LI><P><FONT COLOR="#ff0000"><B>Data
+		Verification and Summarization</SPAN></B></FONT></FONT></FONT></P>
+	</OL>
+</OL>
+<OL>
+	<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+	<B><SPAN STYLE="background: #ffff00">Prepare
+	Data </SPAN></B></FONT></FONT>
+	</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Importing Data</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		<B><SPAN STYLE="background: #ffff00">Data
+		Verification</SPAN></B></FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		<B><SPAN STYLE="background: #ffff00">Data
+		Summarization</SPAN></B></FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Data Visualization</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Data Cleaning</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Feature Selection</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Data Transforms</FONT></FONT></P>
+	</OL>
+	<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+	<B>Evaluate
+	Algorithms </B></FONT></FONT>
+	</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Resampling Methods</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Evaluation Metrics</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Spot-Check
+		Algorithms</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Model Selection</FONT></FONT></P>
+	</OL>
+	<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+	<B>Improve Results </B></FONT></FONT>
+	</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Algorithm Tuning</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Ensemble Methods</FONT></FONT></P>
+	</OL>
+	<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+	<B>Present Results </B></FONT></FONT>
+	</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Finalize Model</FONT></FONT></P>
+		<LI><P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 115%">
+		Make New
+		Predictions</FONT></FONT></P>
+	</OL>
+</OL>
+<P>Once
+we have verified our data, we begin the analysis process by
+<B><SPAN STYLE="background: #ffff00">summarizing the data to
+understand what we are dealing with</SPAN></B>, and then we use a
+number of graphical methods to visualize the data to see what trends
+we can see in the raw data. These steps will provide us with basic
+information about our data which will then be fed into the next step
+which is to prepare the data for further processing by our machine
+learning techniques. These summarization techniques are often
+referred to as descriptive statistics.</SPAN></FONT></FONT></FONT></P>
+<P>We
+will now begin this process using R so begin by setting up your
+working directory (where you will store your R session). </SPAN></FONT></FONT><B>Note
+the # character in R means that everything that follows is a comment
+not a command. </SPAN></B></FONT></FONT>
+</SPAN></FONT></FONT><B>Another
+note - all the examples in this class will all be written for the
+Windows OS.  </SPAN></B></FONT></FONT>Remember
+the </SPAN></FONT></FONT><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>#</SPAN></B></FONT></FONT></FONT>
+symbol is used prior to a comment</SPAN></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>getwd()
+			# Shows the working directory (wd)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>setwd(choose.dir())
+		# Select the working directory interactively</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>setwd(&quot;C:/myfolder/data&quot;)
+	# Changes the wd (format depends on your OS)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>setwd(&quot;H:\\myfolder\\data&quot;)
+	# Changes the wd (format depends on your OS)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>dir()
+			 	# Lists files in the working directory</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>dir.create(&quot;C:/test&quot;)
+		# Creates folder ‘test’ in drive ‘c:’</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>setwd(&quot;C:/test&quot;)
+		# Changes the working directory to “c:/test”</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>From
+here on we will generally assume our data has been placed into a R
+</SPAN></FONT></FONT><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>dataframe</SPAN></B></FONT></FONT></FONT>
+data structure. Remember this type of structure can store multiple
+different types of data, such as categorical and numerical (unlike a
+vector or matrix). Below is a simple example from </SPAN></FONT></FONT><U><B>Practical
+Data Science with R</SPAN></B></U></FONT></FONT><B>
+by N Zumel 2014 p. 35.</SPAN></B></FONT></FONT></P>
+<P>Here
+is the background on this data set; <B>suppose your goal is to build
+a model to predict which of your customers don’t have health
+insurance;</B> perhaps you want to market inexpensive health
+insurance packages to them. You’ve collected a dataset of customers
+whose health insurance status you know. You’ve also identified some
+customer properties that you believe help predict the probability of
+insurance coverage: age, employment status, income, information about
+residence and vehicles, and so on. You’ve put all your data into a
+single data frame called <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>custdata</SPAN></B></FONT></FONT></FONT>
+that you’ve input into R.  Now you’re ready to start building the
+model to identify the customers you’re interested in. This code
+works for Windows OS – note the direction of the slashes <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>/</SPAN></B></FONT></FONT></FONT>
+ not <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>\</SPAN></B></FONT></FONT></FONT>
+as usual in Windows. </SPAN></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>custdata
+&lt;-
+read.table(&quot;https://raw.githubusercontent.com/WinVector/zmPDSwR/master/Custdata/custdata.tsv&quot;,header=T,sep='\t')</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>If
+that does not work go to the web site folder containing the data -
+<A HREF="https://github.com/WinVector/zmPDSwR/tree/master/Custdata%20and%20choose%20custdata.tsv">https://github.com/WinVector/zmPDSwR/tree/master/Custdata
+and choose <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>custdata.tsv</SPAN></B></FONT></FONT></FONT></A><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>
+</SPAN></B></FONT></FONT></FONT>and you can copy and paste the raw
+data into a text file called <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>custdata.txt</SPAN></B></FONT></FONT></FONT>
+and read that into R from your own computer (run the below only if
+you load the file from your computer and you will need to change the
+address shown in red below</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>custdata
+&lt;- read.table(&quot;C:/<FONT COLOR="#ff0000">Users/lstout/…</FONT>/custdata.txt&quot;,header=T,sep='\t')</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>I
+also put this data on the class Blackboard labeled as </SPAN></FONT></FONT><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>custdata.txt</SPAN></B></FONT></FONT></FONT>
+for download and reading into R. </SPAN></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P>In
+R verify what type of data structure you have created and then we
+will explore the data.</SPAN></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>is.data.frame(custdata)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">[1]
+TRUE</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P>See
+<A HREF="https://www.r-bloggers.com/exploratory-data-analysis-useful-r-functions-for-exploring-a-data-frame/">https://www.r-bloggers.com/exploratory-data-analysis-useful-r-functions-for-exploring-a-data-frame/</A><FONT COLOR="#000000">
+for more information on dataframes.</FONT></SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 0.19in">
+<FONT SIZE=3>To
+obtain the dimensions of the data frame (number of rows first then
+number of columns) - the output is a vector.</FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>dim(custdata)		#
+rows by columns</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">[1]
+1000 11</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; background: #ffffff; line-height: 0.19in">
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>dim(custdata)[1]	#
+Number of rows</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">[1]
+1000</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>dim(custdata)[2]	#
+Number of columns</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">[1]
+1000</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>Use&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><A HREF="http://stat.ethz.ch/R-manual/R-devel/library/utils/html/head.html">head()</A></SPAN></B></FONT></FONT></FONT>&nbsp;to
+obtain the first n observations and&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><A HREF="http://stat.ethz.ch/R-manual/R-devel/library/utils/html/head.html">tail()</A></SPAN></B></FONT></FONT></FONT>&nbsp;to
+obtain the last n observations; by default, n = 6. &nbsp;These are
+good commands for obtaining an intuitive idea of what the data look
+like without revealing the entire data set, which could have millions
+of rows and thousands of columns.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>head(custdata,
+n = 5)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+ <FONT FACE="Courier New, serif"><B><FONT SIZE=1>custid
+sex is.employed income  marital.stat health.ins            
+housing.type recent.move num.vehicles age state.of.res</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1>1
+  2068   F          NA  11300       Married       TRUE Homeowner free
+and clear       FALSE            2  49     Michigan</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1>2
+  2073   F          NA      0       Married       TRUE               
+   Rented        TRUE            3  40      Florida</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1>3
+  2848   M        TRUE   4500 Never Married      FALSE               
+   Rented        TRUE            3  22      Georgia</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1>4
+  5641   M        TRUE  20000 Never Married      FALSE    Occupied
+with no rent       FALSE            0  22   New Mexico</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1>5
+  6369   F        TRUE  12000 Never Married       TRUE               
+   Rented        TRUE            1  31      Florida</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 0.19in">
+<FONT SIZE=3>The</FONT>&nbsp;</FONT><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><A HREF="http://stat.ethz.ch/R-manual/R-devel/library/base/html/names.html">names()</A>&nbsp;</SPAN></B></FONT></FONT></FONT>function
+will return the column headers.</FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>names(custdata)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">[1]
+&quot;custid&quot;       &quot;sex&quot;          &quot;is.employed&quot;
+ &quot;income&quot;       &quot;marital.stat&quot; &quot;health.ins&quot;
+  &quot;housing.type&quot;</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">[8]
+&quot;recent.move&quot;  &quot;num.vehicles&quot; &quot;age&quot;    
+     &quot;state.of.res&quot;</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<P>This
+fictitious data set was created by the authors of the <U>Practical
+Data Science with R</U> book and it is used to demonstrate many of
+the principles of data science. It assumes that data from a large
+group of people have been collected and the names of the above
+variables are indicative of the personal information that was
+gathered, including whether or not the individual has health
+insurance. <B>This variable is the Y (response) variable and the
+business goal here is to use all the other variables to try and
+predict the probability of health insurance coverage</B> so that
+marketing can target potential customers who do not currently have
+health insurance that are likely to purchase it. </SPAN></FONT></FONT></FONT>
+</P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 0.19in">
+<FONT SIZE=3>The</FONT>&nbsp;</FONT><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><A HREF="http://stat.ethz.ch/R-manual/R-devel/library/utils/html/ls_str.html">str()</A></SPAN></B></FONT></FONT></FONT>&nbsp;</FONT>function
+returns many useful pieces of information, including the above, and
+the types of data for each column. &nbsp;</FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>str(custdata)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">'data.frame':	1000
+obs. of  11 variables:</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">$
+custid      : </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">int</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+ 2068 2073 2848 5641 6369 8322 8521 12195 14989 15917 ...</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">$
+sex         : </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">Factor
+w/ 2 levels</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+&quot;F&quot;,&quot;M&quot;: 1 1 2 2 1 1 2 2 2 1 ...</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">$
+is.employed : </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">logi</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+ NA NA TRUE TRUE TRUE TRUE ...</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">$
+income      : </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">int</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+ 11300 0 4500 20000 12000 180000 120000 40000 9400 24000 ...</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">$
+marital.stat: </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">Factor
+w/ 4 levels</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+&quot;Divorced/Separated&quot;,..: 2 2 3 3 3 3 3 2 2 1 ...</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">$
+health.ins  : </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">logi</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+ TRUE TRUE FALSE FALSE TRUE TRUE ...</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">$
+housing.type: </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">Factor
+w/ 4</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+levels &quot;Homeowner free and clear&quot;,..: 1 4 4 3 4 2 1 4 4 1
+...</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">$
+recent.move : </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">logi</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+ FALSE TRUE TRUE FALSE TRUE FALSE ...</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">$
+num.vehicles: </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">int</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+ 2 3 3 0 1 1 1 3 2 1 ...</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">$
+age         : </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">num</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+ 49 40 22 22 31 40 39 48 44 70 ...</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">$
+state.of.res: </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">Factor
+w/ 50 levels</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+&quot;Alabama&quot;,&quot;Alaska&quot;,..: 22 9 10 31 9 32 12 22 13
+33 ...</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 0.19in">
+&nbsp;<FONT SIZE=3>To
+obtain all of the allowed categories or levels of a categorical
+variable, use the</FONT>&nbsp;</FONT><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><A HREF="http://stat.ethz.ch/R-manual/R-devel/library/base/html/levels.html">levels()</A></SPAN></B></FONT></FONT></FONT>&nbsp;</FONT>function.</FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>levels(custdata$marital.stat)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">[1]
+&quot;Divorced/Separated&quot; &quot;Married&quot; &quot;Never
+Married&quot; &quot;Widowed&quot;  </FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0in; background: #ffffff; line-height: 0.16in">
+<BR>
+</P>
+<P>To
+obtain all of the unique (duplicated items removed) values of a
+column variable, use the&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><A HREF="http://stat.ethz.ch/R-manual/R-devel/library/base/html/levels.html">unique()</A></SPAN></B></FONT></FONT></FONT>&nbsp;function</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>unique(custdata$marital.stat)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">[1]
+Married            Never Married      Divorced/Separated Widowed     
+     </FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050">Levels:
+Divorced/Separated Married Never Married Widowed</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; background: #ffffff; line-height: 0.16in">
+<FONT COLOR="#00b0f0">  </FONT>
+</P>
+<P>Note
+in this case the results are similar to what you got with the
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>levels()</SPAN></B></FONT></FONT></FONT>
+function. <B>The value of </B><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><A HREF="http://stat.ethz.ch/R-manual/R-devel/library/base/html/levels.html">unique()</A></SPAN></B></FONT></FONT></FONT><B>&nbsp;</B><B>is
+to find out if some row has a value that is not one of the allowed
+levels due to a data entry error such as a misspelling</B>. It also
+works on numerical columns (where <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>levels()
+</SPAN></B></FONT></FONT></FONT>does not):</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; background: #ffffff; line-height: 0.16in">
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>unique(custdata$age)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">[1]
+ 49.0000  40.0000  22.0000  31.0000  39.0000  48.0000  44.0000 
+70.0000  46.0000  33.0000  51.0000</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[12]
+ 63.0000  35.0000  54.0000  28.0000  36.0000  68.0000  53.0000 
+58.0000  50.0000  55.0000  72.0000</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[23]
+ 66.0000  84.0000  65.0000  67.0000  88.0000  85.0000  78.0000 
+57.0000  61.0000  34.0000  86.0000</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[34]
+ 60.0000  38.0000  29.0000  59.0000  41.0000  75.0000  69.0000 
+32.0000  42.0000  76.0000  45.0000</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[45]
+ 37.0000  82.0000  64.0000  83.0000  43.0000  81.0000  30.0000 
+56.0000  24.0000  73.0000  62.0000</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[56]
+ 47.0000  18.0000  74.0000  93.0000  52.0000  77.0000 137.7000 
+27.0000  79.0000  26.0000  25.0000</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[67]
+ 21.0000 123.0610  80.0000 136.0522  71.0000  23.0000  89.0000 
+20.0000 146.6802  19.0000 124.8451</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[78]
+ 87.0000   0.0000 130.4016 126.7373 113.3372</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>If
+you want to see these values sorted use</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>sort(unique(custdata$age))</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">[1]
+  0.0000  18.0000  19.0000  20.0000  21.0000  22.0000  23.0000 
+24.0000  25.0000  26.0000  27.0000</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[12]
+ 28.0000  29.0000  30.0000  31.0000  32.0000  33.0000  34.0000 
+35.0000  36.0000  37.0000  38.0000</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[23]
+ 39.0000  40.0000  41.0000  42.0000  43.0000  44.0000  45.0000 
+46.0000  47.0000  48.0000  49.0000</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[34]
+ 50.0000  51.0000  52.0000  53.0000  54.0000  55.0000  56.0000 
+57.0000  58.0000  59.0000  60.0000</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[45]
+ 61.0000  62.0000  63.0000  64.0000  65.0000  66.0000  67.0000 
+68.0000  69.0000  70.0000  71.0000</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[56]
+ 72.0000  73.0000  74.0000  75.0000  76.0000  77.0000  78.0000 
+79.0000  80.0000  81.0000  82.0000</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[67]
+ 83.0000  84.0000  85.0000  86.0000  87.0000  88.0000  89.0000 
+93.0000 </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt"><SPAN STYLE="background: #ffff00">113.3372
+123.0610 124.8451</SPAN></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt"><SPAN STYLE="background: #ffff00">[78]
+126.7373 130.4016 136.0522 137.7000 146.6802</SPAN></FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Using
+this information, you can determine which rows have an invalid entry,
+e.g., if we want to find which rows had <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>ages</SPAN></B></FONT></FONT></FONT>
+&gt; 100 use</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>which(custdata$age
+&gt; 100)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=2 STYLE="font-size: 9pt">[1]
+213 267 287 594 626 753 927 954</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>To
+see a single row of one of the large <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>age</SPAN></B></FONT></FONT></FONT>
+entries use</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>custdata[213,]</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+   <FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">custid
+sex is.employed income marital.stat health.ins housing.type
+recent.move num.vehicles   age</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">213
+287882   M        TRUE  60000      Married       TRUE       Rented   
+    TRUE            2 137.7</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+   <FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">state.of.res</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">213
+     Florida</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>To
+see the entire row of all these large age entries use</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>custdata[which(custdata$age
+&gt; 100),]</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+    <FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">custid
+sex is.employed income       marital.stat health.ins                
+housing.type recent.move</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">213
+ 287882   M        TRUE  60000            Married       TRUE         
+             Rented        TRUE</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">267
+ 364991   F          NA  12000 Divorced/Separated       TRUE
+Homeowner with mortgage/loan       FALSE</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">287
+ 397230   F        TRUE  31200            Married       TRUE         
+             Rented       FALSE</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">594
+ 843811   F        TRUE  40000      Never Married       TRUE
+Homeowner with mortgage/loan       FALSE</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">626
+ 875771   M       FALSE 175200            Married       TRUE
+Homeowner with mortgage/loan       FALSE</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">753
+1047534   M        TRUE 200000            Married       TRUE
+Homeowner with mortgage/loan       FALSE</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">927
+1303929   F       FALSE  43400      Never Married       TRUE         
+             Rented       FALSE</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">954
+1361012   F          NA 255000            Widowed       TRUE    
+Homeowner free and clear       FALSE</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+   <FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">num.vehicles
+     age  state.of.res</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">213
+           2 137.7000       Florida</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">267
+           1 123.0610        Nevada</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">287
+           2 136.0522         Texas</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">594
+           1 146.6802       Indiana</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">626
+           3 124.8451      Arkansas</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">753
+           4 130.4016    Washington</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">927
+           1 126.7373 West Virginia</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">954
+           1 113.3372     Tennessee</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>You
+can determine which row has an invalid entry, e.g., if we want to
+find which rows had NAs for <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>is.employed</SPAN></B></FONT></FONT></FONT>
+use</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>which(is.na(custdata$is.employed))	</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+ <FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">[1]
+  1   2   9  11  17  20  30  32  33  35  38  39  40  41  45  47  49 
+50  51  56  59  65  66  71  73  75</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">[27]
+ 78  79  82  85  91  97  98  99 103 112 115 116 118 120 124 125 126
+129 130 131 132 134 138 139 144 147</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">[53]
+149 152 156 157 158 160 164 169 170 172 173 174 176 178 181 184 189
+195 196 197 198 200 201 202 206 209</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">[79]
+214 216 219 226 227 237 238 241 244 250 252 254 256 262 265 267 270
+271 272 273 274 275 278 279 280 281</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[105]
+282 284 291 297 307 308 310 311 312 313 314 320 321 327 331 332 334
+336 337 339 345 352 353 354 355 357</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[131]
+358 361 362 371 372 374 378 379 381 386 388 391 393 396 397 398 399
+401 406 407 409 411 414 423 426 428</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[157]
+431 434 437 439 442 448 449 455 461 465 470 474 478 482 483 486 494
+498 501 504 520 522 524 525 530 536</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[183]
+542 545 549 551 556 558 559 560 561 569 570 571 576 577 578 583 588
+595 597 602 616 617 621 631 632 637</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[209]
+639 647 648 649 651 653 654 655 657 664 667 668 670 672 680 683 687
+691 701 702 709 710 711 712 714 716</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[235]
+717 721 722 723 726 727 739 740 742 746 751 754 759 760 761 769 774
+776 779 796 800 802 807 809 810 812</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[261]
+818 819 823 828 831 832 838 839 840 843 845 846 848 849 855 856 858
+859 860 861 864 872 876 877 889 896</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[287]
+897 900 901 904 906 907 911 913 914 915 916 922 923 929 931 933 934
+936 938 940 944 947 949 952 954 955</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">[313]
+956 960 962 963 965 967 970 971 972 977 983 988 994 995 997 999</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>To
+find which row has the smallest (largest) numerical value use </SPAN></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>custdata[which.min(custdata$income),
+]</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+   <FONT FACE="Courier New, serif"><B><FONT SIZE=1>custid
+sex is.employed income marital.stat health.ins                
+housing.type recent.move num.vehicles age</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1>692
+971703   M       </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1><SPAN STYLE="background: #ffff00">FALSE
+ -8700</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1>     
+Married       TRUE Homeowner with mortgage/loan       FALSE          
+ 3  60</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+   <FONT FACE="Courier New, serif"><B><FONT SIZE=1>state.of.res</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1>692
+    Oklahoma</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>Here
+we see row 692 with an income of -8700</SPAN></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>And
+similarly, the largest income</SPAN></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>custdata[which.max(custdata$income),
+]</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+    <FONT FACE="Courier New, serif"><B><FONT SIZE=1>custid
+sex is.employed income marital.stat health.ins                
+housing.type recent.move num.vehicles age</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1>883
+1245887   F        TRUE </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1><SPAN STYLE="background: #ffff00">615000</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1>
+     Married       TRUE Homeowner with mortgage/loan       FALSE     
+      3  44</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+   <FONT FACE="Courier New, serif"><B><FONT SIZE=1>state.of.res</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1>883
+Pennsylvania</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; background: #ffffff; line-height: 0.16in">
+<BR>
+</P>
+<P>Here
+we see row 883 with an income of 615000</SPAN></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B><SPAN STYLE="background: #ffff00">Using
+these techniques we can very quickly identify values that could be
+problems.</SPAN></B><B> </B></SPAN></FONT></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P>Another
+way to validate your data is to use the <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>validate</SPAN></B></FONT></FONT></FONT>
+package. <B>Remember to use a package for the first time, you need to
+install it from one of R web sites, then load it into your working R
+environment.</B> In RStudio go to the top row of pull-down menus and
+select <B>Tools -&gt; Install Packages</B> then in the pop-up window
+write validate and make sure <B>Install dependencies</B> is checked.
+You should eventually see the following output</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>package
+‘settings’ successfully unpacked and MD5 sums checked</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>package
+‘validate’ successfully unpacked and MD5 sums checked</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>The
+downloaded binary packages are in</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>	C:\Users\...
+<FONT COLOR="#000000">(system dependent)</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; background: #ffffff; line-height: 0.16in">
+<BR>
+</P>
+<P>The
+above step executes the below R command line and may ask you for a R
+web site.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>install.packages(&quot;validate&quot;)	<FONT SIZE=1 STYLE="font-size: 8pt">#
+This step can be done inside RSTudio -&gt; Tools -&gt; Install
+Packages</FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B><SPAN STYLE="background: #ffff00">Remember
+– you only have to install it once, but you must load each package
+at the beginning of each session prior to its use.</SPAN></B></SPAN></FONT></FONT></FONT></P>
+<P>After
+this all you have to do is to load the package into your environment
+using <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>library()</SPAN></B></FONT></FONT></FONT>
+each time you run a clean-start of R. In R the library is the
+directory where your packages have been installed. This step can also
+be done inside RStudio to going over to the bottom right window and
+selecting the Packages tab then scrolling down the alphabetical list
+of installed packages and check the box on the left by <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>validate</SPAN></B></FONT></FONT></FONT>.</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>library(&quot;validate&quot;)</SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>To
+check which packages you have loaded into your R environment use </SPAN></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>(.packages()
+)<FONT SIZE=2 STYLE="font-size: 9pt">		</FONT># Don’t forget the
+period in front</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">[1]
+&quot;ggplot2&quot;   &quot;validate&quot;  &quot;stats&quot;    
+&quot;graphics&quot;  &quot;grDevices&quot; &quot;utils&quot;    
+&quot;datasets&quot;  &quot;methods&quot;  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">[9]
+&quot;base&quot;	</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=2 STYLE="font-size: 9pt">#
+This shows what I have loaded – you should see validate at a
+minimum</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><B><SPAN STYLE="background: #ffff00">Remember,
+if a package is not loaded you will not be able to use any of its
+functions.</SPAN></B></SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; background: #ffffff; line-height: 0.16in">
+<BR>
+</P>
+<P>Now
+we will use this package to validate our data set. First let’s
+assume that any <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>income</SPAN></B></FONT></FONT></FONT>
+entry below zero or greater than 200,000 is invalid and <B>needs to
+be flagged and investigated further, deleted, changed to NA or
+another indicator value.</B></SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>result.df
+&lt;- check_that(custdata, income &gt;= 0, income &lt;= 200000)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>summary(result.df)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+ <FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">name
+items passes fails nNA error warning                expression</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">1
+  V1  1000    999     </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">1</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+  0 FALSE   FALSE    (income - 0) &gt;= -1e-08</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">2
+  V2  1000    967    </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">33</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+  0 FALSE   FALSE (income - 2e+05) &lt;= 1e-08</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<BR>
+</P>
+<P>Note
+we see one unusually low (0 or negative) and 33 high entries. Next we
+check to see if there are any erroneous entries in <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>is.employed</SPAN></B></FONT></FONT></FONT>.
+</SPAN></FONT></FONT></FONT>
+</P>
+<P>
+<BR>
+</P>
+<P>
+<BR>
+</P>
+<P>
+<BR>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>result.df2
+&lt;- check_that(custdata, is.employed == TRUE, is.employed == FALSE)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>summary(result.df2)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+ <FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 8pt">rule
+items passes fails nNA error warning           expression</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">1
+  V1  1000    599    73 </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">328</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+FALSE   FALSE  is.employed == TRUE</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">2
+  V2  1000     73   599 </FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="background: #ffff00">328</SPAN></FONT></FONT><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 8pt">
+FALSE   FALSE is.employed == FALSE</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P>Here
+we see that there are 328 rows with no entry and all others are
+either True or False. The <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>validate</SPAN></B></FONT></FONT></FONT>
+package also has a lot more functions that can be used for the data
+validation process. In the next section we will show how you can use
+visualizations to validate your data, especially with regards to
+extreme values. </SPAN></FONT></FONT></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P>When
+applied to a dataframe, the&nbsp;<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>summary()</SPAN></B></FONT></FONT></FONT>&nbsp;function
+is essentially applied to each column, and the results for all
+columns are shown together. &nbsp;For a continuous (numeric) variable
+like “income”, it returns the minimum, maximum, mean, median, and
+first and third quartile. If there are any missing values (denoted by
+“NA”), it would also provide a count for them.  For a categorical
+variable like <FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>marital.stat</SPAN></B></FONT></FONT></FONT>,
+it returns the levels and the number of data in each level. &nbsp;</SPAN></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B>summary(custdata)</SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+    <FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">custid
+       sex     is.employed         income                  
+marital.stat health.ins                            housing.type</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">Min.
+  :   2068   F:440   Mode :logical   Min.   : -8700  
+Divorced/Separated:155   Mode :logical   Homeowner free and clear   
+:157  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">1st
+Qu.: 345667   M:560   FALSE:73        1st Qu.: 14600   Married       
+   :516   FALSE:159       Homeowner with mortgage/loan:412  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">Median
+: 693403           TRUE :599       Median : 35000   Never Married    
+:233   TRUE :841       Occupied with no rent       : 11  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">Mean
+  : 698500           NA's :328       Mean   : 53505   Widowed        
+  : 96   NA's :0         Rented                      :364  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">3rd
+Qu.:1044606                           3rd Qu.: 67000                 
+                          NA's                        : 56  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">Max.
+  :1414286                           Max.   :615000                  
+                                                           </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+                                                                     
+                                                                </FONT></SPAN></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+</FONT><FONT FACE="Courier New, serif"><B><FONT COLOR="#00b050"><FONT SIZE=1 STYLE="font-size: 6pt">recent.move
+     num.vehicles        age              state.of.res</FONT></FONT></SPAN></B></FONT></FONT></FONT></P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">Mode
+:logical   Min.   :0.000   Min.   :  0.0   California  :100  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">FALSE:820
+      1st Qu.:1.000   1st Qu.: 38.0   New York    : 71  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">TRUE
+:124       Median :2.000   Median : 50.0   Pennsylvania: 70  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+<FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">NA's
+:56        Mean   :1.916   Mean   : 51.7   Texas       : 56  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+                <FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">3rd
+Qu.:2.000   3rd Qu.: 64.0   Michigan    : 52  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+                <FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">Max.
+  :6.000   Max.   :146.7   Ohio        : 51  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P>
+<FONT COLOR="#4361f7"><FONT COLOR="#00b050">
+                <FONT FACE="Courier New, serif"><B><FONT SIZE=1 STYLE="font-size: 6pt">NA's
+  :56                      (Other)     :600  </FONT></FONT></SPAN></B></FONT></FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<P><B><SPAN STYLE="background: #ffff00">Things
+to look for in this summary to help validate the data; </SPAN></B></SPAN></FONT></FONT></FONT>
+</P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Look
+	at a column of data to see if it is of the desired type; numerical,
+	logical etc. </SPAN></B></SPAN></FONT></FONT></FONT>
+	</P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Check
+	the min and max values of numerical data to see if they make sense
+	(e.g., look for extreme values or negative values where they don’t
+	belong such as age). </SPAN></B></SPAN></FONT></FONT></FONT>
+	</P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">With
+	categorical variables do all the entries make sense (e.g.,
+	</SPAN></B><FONT COLOR="#4361f7"><FONT FACE="Courier New, serif"><B><SPAN STYLE="background: #ffff00">marital.stat</SPAN></SPAN></B></FONT></FONT></FONT><B><SPAN STYLE="background: #ffff00">).
+	</SPAN></B></SPAN></FONT></FONT></FONT>
+	</P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B><SPAN STYLE="background: #ffff00">Also
+	look for missing values which are indicated with NA’s – how
+	many, which variables have the most, patterns in them that might
+	indicate problems in gathering the data etc.</SPAN></B></SPAN></FONT></FONT></FONT></P>
+</UL>
+<P><BR><BR>
+</P>
+<P>Here
+is what we can see with the data;</SPAN></FONT></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><FONT COLOR="#4361f7"><B>is.employed
+	</B></FONT><B>missing almost a third of the data</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><FONT COLOR="#4361f7"><B>income</B></FONT><B>
+	has at least one negative value</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>84%
+	of the customers have </B><FONT COLOR="#4361f7"><B>health.ins</B></FONT></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><FONT COLOR="#4361f7"><B>housing.type,
+	recent.move</B></FONT><FONT COLOR="#00b0f0"><B>, </B></FONT><B>and</B><FONT COLOR="#00b0f0"><B>
+	</B></FONT><FONT COLOR="#4361f7"><B>num.vehicles </B></FONT><B>are
+	each missing 56 values</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>The
+	average value for </B><FONT COLOR="#4361f7"><B>age</B></FONT><FONT COLOR="#00b0f0"><B>
+	</B></FONT><B>seems plausible but the min and max values do not</B></SPAN></FONT></FONT></FONT></P>
+	<LI><P STYLE="margin-top: 0.08in; line-height: 100%"><B>The
+	categorical variable </B><FONT COLOR="#4361f7"><B>state.of.res
+	</B></FONT><B>reports how many customers are in each state for first
+	few states</B></SPAN></FONT></FONT></FONT></P>
+</UL>
+<P>Further
+comments; <B>a few missing values may not really be a problem</B>,
+but if a particular data field is largely unpopulated, it shouldn’t
+be used as an input without some repair (discussed later in class).
+<B>In R, many modeling algorithms will, by default, quietly drop rows
+with missing values, and the missing values in the </B><FONT COLOR="#4361f7"><FONT SIZE=2 STYLE="font-size: 9pt"><B>is.employed</B></FONT></FONT><FONT COLOR="#4361f7"><FONT FACE="Courier, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><B>
+</B></FONT></FONT></FONT><B>variable could cause R to quietly ignore
+nearly a third of the data.</B></SPAN></FONT></FONT></FONT></P>
+<P>Even
+when a column or variable isn’t missing any values, <B>you still
+want to check that the values that you do have make sense</B>. Do you
+have any invalid values or outliers? Examples of invalid values
+include negative values in what should be a non-negative numeric data
+field (like age or income), or text where you expect numbers.
+<B>Outliers are data points that fall well out of the range of where
+you expect the data to be. </B></SPAN></FONT></FONT></FONT>
+</P>
+<P>Negative
+values for income could indicate bad data. They might also have a
+special meaning, like “amount of debt.”</SPAN></FONT></FONT></FONT></P>
+<P><B>Either
+way, you should check how prevalent the issue is, and decide what to
+do: Do you drop the data with negative income? Do you convert
+negative values to zero?</B></SPAN></FONT></FONT></FONT></P>
+<P>Customers
+of age zero, or customers of an age greater than about 110 are
+outliers. They fall out of the range of expected customer values.
+Outliers could be data input errors. They could be special sentinel
+values: zero might mean “age unknown” or “refuse to state.”
+And some of your customers might be especially long-lived.</SPAN></FONT></FONT></FONT></P>
+<P><B>You
+also want to pay attention to how much the values in the data vary</B>.
+<B><SPAN STYLE="background: #ffff00">If you believe that age or
+income helps to predict the probability of health insurance coverage,
+then you should make sure there is enough variation in the age and
+income of your customers for you to see the relationships</SPAN></B>.
+Even ignoring negative income, the <FONT COLOR="#4361f7"><FONT FACE="Courier, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><B>income</B></FONT></FONT></FONT><FONT FACE="Courier, serif"><FONT SIZE=2 STYLE="font-size: 9pt">
+</FONT></FONT>variable ranges from zero to over half a million
+dollars. That’s pretty wide (though typical for income). Data that
+ranges over several orders of magnitude like this can be a problem
+for some modeling methods. We’ll talk about mitigating data range
+issues when we talk about transformations later. <B>Data can be too
+narrow</B>, too. Suppose all your customers are between the ages of
+50 and 55. It’s a good bet that age range wouldn’t be a very good
+predictor of the probability of health insurance coverage for that
+population, since it doesn’t vary much at all.</SPAN></FONT></FONT></FONT></P>
+<P>One
+factor that determines apparent data range is the unit of
+measurement. To take a nontechnical example, we measure the ages of
+babies and toddlers in weeks or in months, because developmental
+changes happen at that time scale for very young children. Suppose we
+measured babies’ ages in years. It might appear numerically that
+there isn’t much difference between a one-year-old and a
+two-year-old. In reality, there’s a dramatic difference with
+respect to development, as any parent can tell you! Units can present
+potential issues in a dataset for another reason, as well. <B>You
+will want to ensure that consistent units were used throughout the
+data gathering process.</B></SPAN></FONT></FONT></FONT></P>
+<P>We
+will now look at data visualization techniques to help us analyze the
+raw data.</SPAN></FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><A NAME="_GoBack"></A><BR><BR>
+</P>
+<P>
+<BR>
+</P>
+<P><FONT COLOR="#ff0000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>END
+CHAPTER 4</B></FONT></FONT></SPAN></FONT></FONT></FONT></P>
+<DIV TYPE=FOOTER>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0in; line-height: 100%"><SDFIELD TYPE=PAGE SUBTYPE=RANDOM FORMAT=PAGE>16</SDFIELD></P>
+	<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+	</P>
+</DIV>
+</BODY>
+</HTML>
